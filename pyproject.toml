@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "shop-backend"
+version = "0.1.0"
+description = ""
+authors = ["Nikolai Zinchenko <nikolaizinchenko94@gmail.com>"]
+readme = "README.md"
+packages = [{include = "shop_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0"
+djangorestframework = "^3.14.0"
+python-dotenv = "^1.0.0"
+environs = "^10.0.0"
+psycopg2-binary = "^2.9.9"
+django-filter = "^23.5"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+black = "^23.12.1"
+isort = "^5.13.2"
+coverage = "^7.3.4"
+mypy = "^1.8.0"
+django-stubs = "^4.2.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[flake8]
+max-line-length = 99
+max-doc-length = 79
+
+[tool.coverage.run]
+omit = [
+    "*/migrations/*",
+    "*/tests/*",
+    "__init__.py",
+    ]
+
+[tool.mypy]
+plugins = ["mypy_django_plugin.main"]
+
+[tool.django-stubs]
+django_settings_module = "core.settings"
