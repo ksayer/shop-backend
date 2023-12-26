@@ -10,16 +10,22 @@ class Page(CoreModel):
     slug = models.SlugField()
 
     def __str__(self):
-        return self.title
+        return self.inner_title
+
+    class Meta(CoreModel.Meta):
+        db_table = 'page'
 
 
-class Block(CoreModel):
+class ContentBlock(CoreModel):
     page = models.ForeignKey(Page, related_name='blocks', on_delete=models.CASCADE)
     inner_title = models.CharField(max_length=128)
     title = models.CharField(max_length=128, blank=True)
 
     def __str__(self):
         return self.title
+
+    class Meta(CoreModel.Meta):
+        db_table = 'content_block'
 
 
 class Banner(CoreModel):
@@ -29,7 +35,7 @@ class Banner(CoreModel):
         TOP = 'top'
         BOTTOM = 'bottom'
 
-    block = models.ForeignKey(Block, related_name='banners', on_delete=models.CASCADE)
+    block = models.ForeignKey(ContentBlock, related_name='banners', on_delete=models.CASCADE)
     pre_title = models.CharField(max_length=256, blank=True)
     title = models.CharField(max_length=256, blank=True)
     subtitle = models.CharField(max_length=256, blank=True)
@@ -41,11 +47,17 @@ class Banner(CoreModel):
     def __str__(self):
         return f'{self.block} - {self.title}'
 
+    class Meta(CoreModel.Meta):
+        db_table = 'banner'
+
 
 class Button(CoreModel):
     text = models.CharField(max_length=64)
     link = models.URLField()
-    banner = models.ForeignKey(Banner, on_delete=models.CASCADE)
+    banner = models.ForeignKey(Banner, related_name='buttons', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.text
+
+    class Meta(CoreModel.Meta):
+        db_table = 'button'

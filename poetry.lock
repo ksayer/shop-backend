@@ -572,6 +572,29 @@ django = ">=3.0"
 pytz = "*"
 
 [[package]]
+name = "djangorestframework-stubs"
+version = "3.14.5"
+description = "PEP-484 stubs for django-rest-framework"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "djangorestframework-stubs-3.14.5.tar.gz", hash = "sha256:5dd6f638aa5291fb7863e6166128a6ed20bf4986e2fc5cf334e6afc841797a09"},
+    {file = "djangorestframework_stubs-3.14.5-py3-none-any.whl", hash = "sha256:43d788fd50cda49b922cd411e59c5b8cdc3f3de49c02febae12ce42139f0269b"},
+]
+
+[package.dependencies]
+django-stubs = ">=4.2.7"
+requests = ">=2.0.0"
+types-PyYAML = ">=5.4.3"
+types-requests = ">=0.1.12"
+typing-extensions = ">=3.10.0"
+
+[package.extras]
+compatible-mypy = ["django-stubs[compatible-mypy]", "mypy (>=1.7.0,<1.8.0)"]
+coreapi = ["coreapi (>=2.0.0)"]
+markdown = ["types-Markdown (>=0.1.5)"]
+
+[[package]]
 name = "easy-thumbnails"
 version = "2.8.5"
 description = "Easy thumbnails for Django"
@@ -1382,4 +1405,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "de6ce0ef052dbe245c96d59d9c40b885c1da7d24f2c6c8c2b262520bd1cb7362"
+content-hash = "315032b8b272acf3e36d245a740662e05ef6e42d83af6fb2411714a67106c401"

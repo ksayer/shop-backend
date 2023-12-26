@@ -19,6 +19,9 @@ class ImagePreset(models.Model):
     def __str__(self):
         return f'{self.id}: {self.type}'
 
+    class Meta:
+        db_table = 'image_preset'
+
 
 class AdaptiveImageSetting(models.Model):
     name = models.CharField(
@@ -42,6 +45,9 @@ class AdaptiveImageSetting(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        db_table = 'adaptive_image_setting'
 
 
 class AdaptiveImage(models.Model):
@@ -80,3 +86,6 @@ class AdaptiveImage(models.Model):
             from adaptive_images.tasks import compress_and_save_images_task
 
             compress_and_save_images_task.apply_async((self.id,), countdown=2)
+
+    class Meta:
+        db_table = 'adaptive_image'

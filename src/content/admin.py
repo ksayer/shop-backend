@@ -1,7 +1,7 @@
 from django.contrib import admin
 from nested_inline.admin import NestedModelAdmin, NestedStackedInline  # type: ignore
 
-from content.models import Banner, Block, Button, Page
+from content.models import Banner, Button, ContentBlock, Page
 
 
 class ButtonInline(NestedStackedInline):
@@ -17,8 +17,8 @@ class BannerInline(NestedStackedInline):
     fk_name = 'block'
 
 
-class BlockInline(NestedStackedInline):
-    model = Block
+class ContentBlockInline(NestedStackedInline):
+    model = ContentBlock
     extra = 0
     inlines = (BannerInline,)
     fk_name = 'page'
@@ -31,14 +31,17 @@ class BannerAdmin(admin.ModelAdmin):
     inlines = (ButtonInline,)
 
 
-@admin.register(Block)
-class BlockAdmin(NestedModelAdmin):
-    list_display = ('page', 'title')
+@admin.register(ContentBlock)
+class ContentBlockAdmin(NestedModelAdmin):
+    list_display = ('inner_title', 'page', 'title')
     list_filter = ('page',)
     inlines = (BannerInline,)
 
 
 @admin.register(Page)
 class PageAdmin(NestedModelAdmin):
-    list_display = ('title',)
-    inlines = (BlockInline,)
+    list_display = (
+        'inner_title',
+        'title',
+    )
+    inlines = (ContentBlockInline,)
