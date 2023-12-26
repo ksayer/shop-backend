@@ -78,4 +78,5 @@ class AdaptiveImage(models.Model):
         super().save(*args, **kwargs)
         if not self.is_compressed:
             from adaptive_images.tasks import compress_and_save_images_task
+
             compress_and_save_images_task.apply_async((self.id,), countdown=2)

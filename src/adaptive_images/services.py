@@ -82,10 +82,7 @@ def get_processed_image(
         return None
 
     resized_image = get_resized_image_by_biggest_side(image, max_width, max_height)
-    if (
-        source_image.path.endswith('.png')
-        and source_image.size > LOWER_THRESHOLD_IMAGE_SIZE
-    ):
+    if source_image.path.endswith('.png') and source_image.size > LOWER_THRESHOLD_IMAGE_SIZE:
         resized_image = resized_image.quantize(method=2)
 
     binary_image, resized_image_filename = save_resized_image(

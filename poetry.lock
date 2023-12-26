@@ -496,6 +496,17 @@ files = [
 Django = ">=3.2"
 
 [[package]]
+name = "django-nested-inline"
+version = "0.4.6"
+description = "Recursive nesting of inline forms for Django Admin"
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-nested-inline-0.4.6.tar.gz", hash = "sha256:e57b55858d112364dfb112bbcdabb888e581d1677d31c1cac3bdcef6c890dc61"},
+    {file = "django_nested_inline-0.4.6-py2.py3-none-any.whl", hash = "sha256:4fc6f0e78b3b5411b4bb7f180bb984831b88874bda48e49a14307baff5da5f12"},
+]
+
+[[package]]
 name = "django-polymorphic"
 version = "3.1.0"
 description = "Seamless polymorphic inheritance for Django models"
@@ -1371,4 +1382,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "2a33d2a4345d86fa8d1947c2846377e5b1754b45514e5fdfb12ff9c2fdeed654"
+content-hash = "de6ce0ef052dbe245c96d59d9c40b885c1da7d24f2c6c8c2b262520bd1cb7362"

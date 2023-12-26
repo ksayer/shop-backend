@@ -24,9 +24,11 @@ INSTALLED_APPS = [
     # project
     'adaptive_images',
     'admintools',
+    'content',
     # third
     'easy_thumbnails',
     'filer',
+    'nested_inline',
 ]
 
 MIDDLEWARE = [
