@@ -21,7 +21,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    # project
+    'adaptive_images',
     'admintools',
+    # third
+    'easy_thumbnails',
+    'filer',
 ]
 
 MIDDLEWARE = [
@@ -83,3 +88,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+FILER_IMAGE_MODEL = 'filer.Image'
