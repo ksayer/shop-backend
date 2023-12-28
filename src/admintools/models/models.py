@@ -12,3 +12,10 @@ class CoreModel(models.Model):
     class Meta:
         abstract = True
         ordering = ['ordering', '-updated']
+
+
+class ActiveCoreModel(CoreModel):
+    active = models.BooleanField(default=True)
+
+    class Meta(CoreModel.Meta):
+        abstract = True

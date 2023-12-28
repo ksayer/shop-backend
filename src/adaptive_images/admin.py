@@ -6,6 +6,7 @@ from adaptive_images.models import AdaptiveImage, AdaptiveImageSetting, ImagePre
 @admin.register(AdaptiveImage)
 class AdaptiveImageAdmin(admin.ModelAdmin):
     list_display = ['__str__', 'is_compressed']
+    search_fields = ['original__original_filename']
 
 
 @admin.register(AdaptiveImageSetting)

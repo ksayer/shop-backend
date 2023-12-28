@@ -24,9 +24,11 @@ INSTALLED_APPS = [
     # project
     'adaptive_images',
     'admintools',
+    'catalog',
     'content',
     # third
     'easy_thumbnails',
+    'django_admin_listfilter_dropdown',
     'filer',
     'nested_inline',
 ]

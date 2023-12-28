@@ -18,6 +18,7 @@ requests = "^2.31.0"
 celery = "^5.3.6"
 redis = "^5.0.1"
 django-nested-inline = "^0.4.6"
+django-admin-list-filter-dropdown = "^1.0.3"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -36,7 +37,7 @@ djangorestframework-stubs = "^3.14.5"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.coverage.run]
+    [tool.coverage.run]
 omit = [
     "*/migrations/*",
     "*/tests/*",
@@ -45,8 +46,13 @@ omit = [
 
 [tool.mypy]
 plugins = ["mypy_django_plugin.main", "mypy_drf_plugin.main"]
-exclude = ["migrations", "adaptive_images"]
+exclude = ["migrations", "adaptive_images.services"]
 follow_imports = 'silent'
+
+
+[[tool.mypy.overrides]]
+module = ["filer.*", "django_admin_listfilter_dropdown.*"]
+ignore_missing_imports = true
 
 [tool.django-stubs]
 django_settings_module = "core.settings"
