@@ -1,7 +1,7 @@
 from django.contrib import admin
 from nested_inline.admin import NestedModelAdmin, NestedStackedInline  # type: ignore
 
-from content.models import Banner, Button, ContentBlock, Page
+from content.models import Banner, Button, ContentBlock, Page, ModelCard
 
 
 class ButtonInline(NestedStackedInline):
@@ -26,6 +26,7 @@ class ContentBlockInline(NestedStackedInline):
 
 @admin.register(Banner)
 class BannerAdmin(admin.ModelAdmin):
+    autocomplete_fields = ['block', 'image']
     list_display = ('title', 'block')
     list_filter = ('block',)
     inlines = (ButtonInline,)
@@ -33,9 +34,11 @@ class BannerAdmin(admin.ModelAdmin):
 
 @admin.register(ContentBlock)
 class ContentBlockAdmin(NestedModelAdmin):
+    autocomplete_fields = ['page']
     list_display = ('inner_title', 'page', 'title')
     list_filter = ('page',)
     inlines = (BannerInline,)
+    search_fields = ['title', 'inner_title']
 
 
 @admin.register(Page)
@@ -45,3 +48,12 @@ class PageAdmin(NestedModelAdmin):
         'title',
     )
     inlines = (ContentBlockInline,)
+    search_fields = ['title', 'inner_title']
+
+
+@admin.register(ModelCard)
+class ModelCardAdmin(admin.ModelAdmin):
+    autocomplete_fields = ['model', 'image']
+    list_display = ('title', 'ordering')
+    list_editable = ('ordering', )
+    model = ModelCard
