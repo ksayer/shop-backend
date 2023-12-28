@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'admintools',
     'catalog',
     'content',
+    'projects',
     # third
     'easy_thumbnails',
     'django_admin_listfilter_dropdown',
