@@ -7,15 +7,15 @@ from django_admin_listfilter_dropdown.filters import (
 from catalog.filters import dropdown_filter_with_custom_title
 from catalog.forms import ProductPropertyInlineFormset, PropertyForm
 from catalog.models import (
+    Category,
+    Group,
+    Model,
     Modification,
     Product,
     ProductFile,
     ProductProperty,
     Property,
     PropertyGroup,
-    Model,
-    Category,
-    Group,
 )
 
 
@@ -47,7 +47,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Model)
 class ModelAdmin(admin.ModelAdmin):
-    autocomplete_fields = ['category']
+    autocomplete_fields = ['category', 'image']
     list_display = ['title', 'active', 'slug', 'ordering']
     list_editable = ['ordering', 'active']
     search_fields = ['title']

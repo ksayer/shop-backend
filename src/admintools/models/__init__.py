@@ -1,1 +1,1 @@
-from .models import CoreModel, ActiveCoreModel
+from .models import ActiveCoreModel, CoreModel, FilerImage

@@ -1,6 +1,8 @@
 import uuid
 
+from django.conf import settings
 from django.db import models
+from filer.models import BaseImage
 
 
 class CoreModel(models.Model):
@@ -19,3 +21,15 @@ class ActiveCoreModel(CoreModel):
 
     class Meta(CoreModel.Meta):
         abstract = True
+
+
+class FilerImage(BaseImage):
+    optimized = models.BooleanField(default=False)
+
+    class Meta(BaseImage.Meta):
+        app_label = 'admintools'
+        default_manager_name = 'objects'
+
+    @property
+    def absolute_url(self):
+        return f'{settings.HOST_DOMAIN}{self.url}'

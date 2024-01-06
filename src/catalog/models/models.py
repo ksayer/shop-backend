@@ -2,8 +2,7 @@ from django.db import models
 from filer.fields.file import FilerFileField
 from filer.fields.image import FilerImageField
 
-from adaptive_images.models import AdaptiveImage
-from admintools.models import CoreModel, ActiveCoreModel
+from admintools.models import ActiveCoreModel, CoreModel
 
 
 class Group(ActiveCoreModel):
@@ -26,9 +25,8 @@ class Model(ActiveCoreModel):
     slug = models.SlugField(unique=False)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='models')
     description = models.TextField(blank=True)
-    image = models.ForeignKey(
-        AdaptiveImage,
-        on_delete=models.PROTECT,
+    image = FilerImageField(
+        on_delete=models.CASCADE,
         related_name='models',
     )
 
@@ -54,9 +52,8 @@ class Product(ActiveCoreModel):
         blank=True,
         null=True,
     )
-    image = models.ForeignKey(
-        AdaptiveImage,
-        on_delete=models.PROTECT,
+    image = FilerImageField(
+        on_delete=models.CASCADE,
         related_name='products',
     )
     schema = FilerFileField(

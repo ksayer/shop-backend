@@ -1,6 +1,6 @@
 from django.db import models as d_models
+from filer.fields.image import FilerImageField
 
-from adaptive_images.models import AdaptiveImage
 from admintools.models import ActiveCoreModel, CoreModel
 from catalog.models import Model
 
@@ -31,9 +31,8 @@ class Project(ActiveCoreModel):
 
 class ProjectImage(CoreModel):
     project = d_models.ForeignKey(Project, on_delete=d_models.CASCADE, related_name='images')
-    image = d_models.ForeignKey(
-        AdaptiveImage,
-        on_delete=d_models.PROTECT,
+    image = FilerImageField(
+        on_delete=d_models.CASCADE,
         related_name='project_images',
     )
     main = d_models.BooleanField(default=False)
@@ -51,10 +50,9 @@ class ProjectImage(CoreModel):
 class Feedback(CoreModel):
     name = d_models.CharField(max_length=64)
     text = d_models.TextField()
-    avatar = d_models.ForeignKey(
-        AdaptiveImage,
+    avatar = FilerImageField(
         on_delete=d_models.CASCADE,
-        related_name='feedbacks'
+        related_name='avatars',
     )
     project = d_models.ForeignKey(
         Project,

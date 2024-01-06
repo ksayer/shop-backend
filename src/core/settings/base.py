@@ -21,17 +21,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    # third
+    'easy_thumbnails',
+    'django_filters',
+    'django_admin_listfilter_dropdown',
+    'filer',
+    'nested_inline',
     # project
-    'adaptive_images',
     'admintools',
     'catalog',
     'content',
     'projects',
-    # third
-    'easy_thumbnails',
-    'django_admin_listfilter_dropdown',
-    'filer',
-    'nested_inline',
 ]
 
 MIDDLEWARE = [
@@ -94,4 +94,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-FILER_IMAGE_MODEL = 'filer.Image'
+FILER_IMAGE_MODEL = 'admintools.FilerImage'
+
+HOST_DOMAIN = 'http://localhost:8000'
