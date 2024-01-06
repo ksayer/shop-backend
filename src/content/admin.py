@@ -12,6 +12,7 @@ class ButtonInline(NestedStackedInline):
 
 class BannerInline(NestedStackedInline):
     model = Banner
+    autocomplete_fields = ['image']
     extra = 0
     inlines = (ButtonInline,)
     fk_name = 'block'
@@ -27,7 +28,7 @@ class ContentBlockInline(NestedStackedInline):
 @admin.register(Banner)
 class BannerAdmin(admin.ModelAdmin):
     autocomplete_fields = ['block', 'image']
-    list_display = ('title', 'block')
+    list_display = ('title', 'block', 'ordering')
     list_filter = ('block',)
     inlines = (ButtonInline,)
 
@@ -35,7 +36,7 @@ class BannerAdmin(admin.ModelAdmin):
 @admin.register(ContentBlock)
 class ContentBlockAdmin(NestedModelAdmin):
     autocomplete_fields = ['page']
-    list_display = ('inner_title', 'page', 'title')
+    list_display = ('inner_title', 'title', 'page', 'title')
     list_filter = ('page',)
     inlines = (BannerInline,)
     search_fields = ['title', 'inner_title']
