@@ -58,7 +58,6 @@ class Feedback(CoreModel):
         on_delete=d_models.CASCADE,
         related_name='feedbacks',
     )
-    is_on_main_page = d_models.BooleanField(default=False)
 
     def __str__(self):
         return self.name

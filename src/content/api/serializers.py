@@ -2,7 +2,7 @@ from django.conf import settings
 from rest_framework import serializers
 
 from admintools.api.serializers import ImageSerializer
-from content.models import Banner, Button, ContentBlock, ModelCard, ProjectCard
+from content.models import Banner, Button, ContentBlock, ModelCard, ProjectCard, FeedbackCard
 
 
 class ButtonSerializer(serializers.ModelSerializer):
@@ -61,6 +61,18 @@ class ProjectCardSerializer(serializers.ModelSerializer):
         }
 
 
+class FeedbackCardSerializer(serializers.ModelSerializer):
+    image = ImageSerializer(source='feedback.avatar')
+    slug = serializers.CharField(source='feedback.project.slug')
+    title = serializers.CharField(source='feedback.name')
+    subtitle = serializers.CharField(source='feedback.project.title')
+    text = serializers.CharField(source='feedback.text')
+
+    class Meta:
+        model = FeedbackCard
+        fields = ['id', 'slug', 'type', 'title', 'subtitle','text', 'image']
+
+
 class ContentBlockSerializer(serializers.ModelSerializer):
     banners = BannerSerializer(many=True)
     cards = serializers.SerializerMethodField()
@@ -83,4 +95,6 @@ class ContentBlockSerializer(serializers.ModelSerializer):
             return ModelCardSerializer(instance=instance.modelcards, many=True).data
         if instance.projectcards.exists():
             return ProjectCardSerializer(instance=instance.projectcards, many=True).data
+        if instance.feedbackcards.exists():
+            return FeedbackCardSerializer(instance=instance.feedbackcards, many=True).data
         return []

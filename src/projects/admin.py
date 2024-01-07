@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from projects.forms import ProjectImageInlineFormset
-from projects.models import Category, Project, ProjectImage
+from projects.models import Category, Project, ProjectImage, Feedback
 
 
 class ProjectImageInline(admin.TabularInline):
@@ -22,3 +22,10 @@ class ProjectAdmin(admin.ModelAdmin):
     list_filter = ['category']
     inlines = [ProjectImageInline]
     search_fields = ['title', 'architect', 'location', 'installer']
+
+
+@admin.register(Feedback)
+class FeedbackAdmin(admin.ModelAdmin):
+    autocomplete_fields = ['project']
+    search_fields = ['name']
+    list_display = ['name', 'project']

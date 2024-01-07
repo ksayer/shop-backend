@@ -4,7 +4,7 @@ from filer.fields.image import FilerImageField
 from admintools.models import CoreModel
 from catalog.models import Model
 from content.models.managers import ProjectCardQuerySet
-from projects.models import Project
+from projects.models import Project, Feedback
 
 
 class Page(CoreModel):
@@ -79,7 +79,7 @@ class CardBase(CoreModel):
 
 
 class ModelCard(CardBase):
-    model = models.ForeignKey(Model, on_delete=models.CASCADE, related_name='model_cards')
+    model = models.ForeignKey(Model, on_delete=models.CASCADE, related_name='modelcards')
 
     @property
     def type(self):
@@ -88,8 +88,17 @@ class ModelCard(CardBase):
 
 class ProjectCard(CardBase):
     objects = ProjectCardQuerySet.as_manager()
-    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='project_cards')
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='projectcards')
 
     @property
     def type(self):
         return 'project'
+
+
+class FeedbackCard(CoreModel):
+    block = models.ForeignKey(ContentBlock, related_name='%(class)ss', on_delete=models.CASCADE)
+    feedback = models.ForeignKey(Feedback, on_delete=models.CASCADE, related_name='feedbackcards')
+
+    @property
+    def type(self):
+        return 'feedback'
