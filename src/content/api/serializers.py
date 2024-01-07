@@ -41,6 +41,7 @@ class BannerSerializer(serializers.ModelSerializer):
             'phone',
             'address',
             'email',
+            'type',
             'image',
         ]
 

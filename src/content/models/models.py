@@ -20,8 +20,8 @@ class ContentBlock(CoreModel):
     class Type(models.TextChoices):
         CONSULT_FORM = 'CONSULT_FORM', 'Get consultation form'
         CATALOG_FORM = 'CATALOG_FORM', 'Get catalog form'
-        BANNERS = 'BANNERS', 'Simple banners'
-        WIDE_BANNERS = 'WIDE_BANNERS', 'Wide banners'
+        BANNERS = 'BANNERS', 'Simple banners (inside the container)'
+        WIDE_BANNERS = 'WIDE_BANNERS', 'Wide banners (the full width of the screen)'
 
     page = models.ForeignKey(Page, related_name='blocks', on_delete=models.CASCADE)
     inner_title = models.CharField(max_length=128)
@@ -41,6 +41,11 @@ class Banner(CoreModel):
         TOP = 'top'
         BOTTOM = 'bottom'
 
+    class Type(models.TextChoices):
+        SIMPLE = 'SIMPLE', 'Simple banner'
+        HERO = 'HERO', 'Hero banner'
+        TAB = 'TAB', 'Tab banner (4 images)'
+
     block = models.ForeignKey(ContentBlock, related_name='banners', on_delete=models.CASCADE)
     pre_title = models.CharField(max_length=256, blank=True)
     title = models.CharField(max_length=256, blank=True)
@@ -58,6 +63,7 @@ class Banner(CoreModel):
     phone = models.CharField(max_length=256, blank=True)
     address = models.CharField(max_length=256, blank=True)
     email = models.CharField(max_length=256, blank=True)
+    type = models.CharField(max_length=32, choices=Type.choices, default=Type.SIMPLE)
 
     def __str__(self):
         return f'{self.block} - {self.title}'

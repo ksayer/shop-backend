@@ -30,7 +30,7 @@ class ContentBlockInline(NestedStackedInline):
 @admin.register(Banner)
 class BannerAdmin(admin.ModelAdmin):
     autocomplete_fields = ['block', 'image']
-    list_display = ('title', 'block', 'ordering')
+    list_display = ('id', 'title', 'block', 'ordering')
     list_editable = ['ordering']
     list_filter = (('block', RelatedDropdownFilter),)
     inlines = (ButtonInline,)
@@ -39,7 +39,7 @@ class BannerAdmin(admin.ModelAdmin):
 @admin.register(ContentBlock)
 class ContentBlockAdmin(NestedModelAdmin):
     autocomplete_fields = ['page']
-    list_display = ('inner_title', 'title', 'page', 'title', 'ordering')
+    list_display = ('id', 'inner_title', 'title', 'page', 'title', 'ordering')
     list_editable = ['ordering']
     list_filter = ('page',)
     inlines = (BannerInline,)
@@ -48,10 +48,7 @@ class ContentBlockAdmin(NestedModelAdmin):
 
 @admin.register(Page)
 class PageAdmin(NestedModelAdmin):
-    list_display = (
-        'inner_title',
-        'title',
-    )
+    list_display = ('id', 'inner_title', 'title',)
     inlines = (ContentBlockInline,)
     search_fields = ['title', 'inner_title']
 
@@ -59,27 +56,27 @@ class PageAdmin(NestedModelAdmin):
 @admin.register(ModelCard)
 class ModelCardAdmin(admin.ModelAdmin):
     autocomplete_fields = ['model', 'block']
-    list_display = ('title', 'block', 'ordering')
+    list_display = ('id', 'title', 'block', 'ordering')
     list_editable = ('ordering',)
 
 
 @admin.register(ProjectCard)
 class ProjectCardAdmin(admin.ModelAdmin):
     autocomplete_fields = ['project', 'block']
-    list_display = ('title', 'block', 'ordering')
+    list_display = ('id', 'title', 'block', 'ordering')
     list_editable = ('ordering',)
 
 
 @admin.register(FeedbackCard)
 class FeedbackCardAdmin(admin.ModelAdmin):
     autocomplete_fields = ['feedback', 'block']
-    list_display = ('feedback', 'block', 'ordering')
+    list_display = ('id', 'feedback', 'block', 'ordering')
     list_editable = ('ordering',)
 
 
 @admin.register(Publication)
 class PublicationAdmin(admin.ModelAdmin):
     autocomplete_fields = ['block']
-    list_display = ['title', 'block', 'ordering']
+    list_display = ['id', 'title', 'block', 'ordering']
     list_editable = ['ordering']
     search_fields = ['title']
