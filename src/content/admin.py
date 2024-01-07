@@ -1,5 +1,6 @@
 from django.contrib import admin
 from nested_inline.admin import NestedModelAdmin, NestedStackedInline  # type: ignore
+from django_admin_listfilter_dropdown.filters import RelatedDropdownFilter
 
 from content.models import Banner, Button, ContentBlock, ModelCard, Page
 
@@ -30,7 +31,7 @@ class BannerAdmin(admin.ModelAdmin):
     autocomplete_fields = ['block', 'image']
     list_display = ('title', 'block', 'ordering')
     list_editable = ['ordering']
-    list_filter = ('block',)
+    list_filter = (('block', RelatedDropdownFilter), )
     inlines = (ButtonInline,)
 
 
@@ -59,4 +60,3 @@ class ModelCardAdmin(admin.ModelAdmin):
     autocomplete_fields = ['model']
     list_display = ('title', 'ordering')
     list_editable = ('ordering',)
-    model = ModelCard

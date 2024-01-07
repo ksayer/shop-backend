@@ -28,6 +28,7 @@ class BannerSerializer(serializers.ModelSerializer):
             'description',
             'image_position',
             'buttons',
+            'mobile_image',
             'image',
         ]
 
@@ -55,6 +56,7 @@ class ContentBlockSerializer(serializers.ModelSerializer):
             'link_text',
             'cards',
             'banners',
+            'form',
         ]
 
     def get_cards(self, instance):
