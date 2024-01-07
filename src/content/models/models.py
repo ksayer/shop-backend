@@ -10,7 +10,7 @@ from projects.models import Project, Feedback
 class Page(CoreModel):
     inner_title = models.CharField(max_length=64)
     title = models.CharField(max_length=64, blank=True)
-    slug = models.SlugField()
+    slug = models.SlugField(unique=True)
 
     def __str__(self):
         return self.inner_title
@@ -68,7 +68,8 @@ class Button(CoreModel):
 
 class CardBase(CoreModel):
     block = models.ForeignKey(ContentBlock, related_name='%(class)ss', on_delete=models.CASCADE)
-    title = models.CharField(max_length=64)
+    title = models.CharField(max_length=128)
+    arrow = models.BooleanField(default=False)
     text = models.TextField()
 
     class Meta(CoreModel.Meta):
@@ -102,3 +103,16 @@ class FeedbackCard(CoreModel):
     @property
     def type(self):
         return 'feedback'
+
+
+class Publication(CardBase):
+    block = models.ForeignKey(ContentBlock, related_name='%(class)ss', on_delete=models.CASCADE)
+    image = FilerImageField(
+        on_delete=models.CASCADE,
+        related_name='pubcitationcards',
+    )
+    slug = models.SlugField(unique=True)
+
+    @property
+    def type(self):
+        return 'publication'

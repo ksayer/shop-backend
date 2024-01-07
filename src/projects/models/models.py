@@ -15,7 +15,7 @@ class Category(ActiveCoreModel):
 class Project(ActiveCoreModel):
     title = d_models.CharField(max_length=64)
     category = d_models.ForeignKey(Category, on_delete=d_models.CASCADE, related_name='projects')
-    slug = d_models.SlugField(max_length=64)
+    slug = d_models.SlugField(max_length=64, unique=True)
     models = d_models.ManyToManyField(Model, related_name='projects')
     architect = d_models.CharField(max_length=64)
     architect_url = d_models.URLField(max_length=255, blank=True)

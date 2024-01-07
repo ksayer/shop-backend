@@ -2,7 +2,15 @@ from django.conf import settings
 from rest_framework import serializers
 
 from admintools.api.serializers import ImageSerializer
-from content.models import Banner, Button, ContentBlock, ModelCard, ProjectCard, FeedbackCard
+from content.models import (
+    Banner,
+    Button,
+    ContentBlock,
+    ModelCard,
+    ProjectCard,
+    FeedbackCard,
+    Publication,
+)
 
 
 class ButtonSerializer(serializers.ModelSerializer):
@@ -40,7 +48,7 @@ class ModelCardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ModelCard
-        fields = ['id', 'slug', 'type', 'title', 'text', 'image']
+        fields = ['id', 'slug', 'arrow', 'type', 'title', 'text', 'image']
 
 
 class ProjectCardSerializer(serializers.ModelSerializer):
@@ -49,7 +57,7 @@ class ProjectCardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ProjectCard
-        fields = ['id', 'slug', 'type', 'title', 'text', 'image']
+        fields = ['id', 'slug', 'arrow', 'type', 'title', 'text', 'image']
 
     def get_image(self, instance):
         return {
@@ -71,6 +79,14 @@ class FeedbackCardSerializer(serializers.ModelSerializer):
     class Meta:
         model = FeedbackCard
         fields = ['id', 'slug', 'type', 'title', 'subtitle','text', 'image']
+
+
+class PublicationSerializer(serializers.ModelSerializer):
+    image = ImageSerializer()
+
+    class Meta:
+        model = Publication
+        fields = ['id', 'slug', 'arrow', 'type', 'title', 'image']
 
 
 class ContentBlockSerializer(serializers.ModelSerializer):
@@ -97,4 +113,6 @@ class ContentBlockSerializer(serializers.ModelSerializer):
             return ProjectCardSerializer(instance=instance.projectcards, many=True).data
         if instance.feedbackcards.exists():
             return FeedbackCardSerializer(instance=instance.feedbackcards, many=True).data
+        if instance.publications.exists():
+            return PublicationSerializer(instance=instance.publications, many=True).data
         return []

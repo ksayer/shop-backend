@@ -2,7 +2,8 @@ from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import RelatedDropdownFilter
 from nested_inline.admin import NestedModelAdmin, NestedStackedInline  # type: ignore
 
-from content.models import Banner, Button, ContentBlock, ModelCard, Page, ProjectCard, FeedbackCard
+from content.models import Banner, Button, ContentBlock, ModelCard, Page, ProjectCard, \
+    FeedbackCard, Publication
 
 
 class ButtonInline(NestedStackedInline):
@@ -58,20 +59,27 @@ class PageAdmin(NestedModelAdmin):
 @admin.register(ModelCard)
 class ModelCardAdmin(admin.ModelAdmin):
     autocomplete_fields = ['model', 'block']
-    list_display = ('title', 'ordering')
+    list_display = ('title', 'block', 'ordering')
     list_editable = ('ordering',)
 
 
 @admin.register(ProjectCard)
 class ProjectCardAdmin(admin.ModelAdmin):
     autocomplete_fields = ['project', 'block']
-    list_display = ('title', 'ordering')
+    list_display = ('title', 'block', 'ordering')
     list_editable = ('ordering',)
 
 
 @admin.register(FeedbackCard)
 class FeedbackCardAdmin(admin.ModelAdmin):
     autocomplete_fields = ['feedback', 'block']
-    list_display = ('feedback', 'ordering')
+    list_display = ('feedback', 'block', 'ordering')
     list_editable = ('ordering',)
 
+
+@admin.register(Publication)
+class PublicationAdmin(admin.ModelAdmin):
+    autocomplete_fields = ['block']
+    list_display = ['title', 'block', 'ordering']
+    list_editable = ['ordering']
+    search_fields = ['title']

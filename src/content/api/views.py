@@ -2,23 +2,7 @@ from django.db.models import Prefetch
 from rest_framework import generics
 
 from content.api.serializers import ContentBlockSerializer
-from content.models import Banner, ContentBlock, ModelCard, ProjectCard, FeedbackCard
-
-from django.db import connection
-from django.db import reset_queries
-
-
-def database_debug(func):
-    def inner_func(*args,**kwargs):
-        reset_queries()
-        results=func(*args,**kwargs)
-        query_info=connection.queries
-        print('function_name:{}'.format(func.__name__))
-        print('query_count:{}'.format(len(query_info)))
-        queries=['{} - {}\n'.format(query['time'], query['sql'])for query in query_info]
-        print('queries:\n{}'.format(''.join(queries)))
-        return results
-    return inner_func
+from content.models import Banner, ContentBlock, ModelCard, ProjectCard, FeedbackCard, Publication
 
 
 class ContentBlockListAPIView(generics.ListAPIView):
@@ -32,11 +16,10 @@ class ContentBlockListAPIView(generics.ListAPIView):
         Prefetch(
             'projectcards', ProjectCard.objects.select_related('project').annotate_main_image()
         ),
+        Prefetch(
+            'publications', Publication.objects.select_related('image')
+        ),
     )
 
     serializer_class = ContentBlockSerializer
     filterset_fields = ['page__slug']
-
-    @database_debug
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)

@@ -22,7 +22,7 @@ class Category(ActiveCoreModel):
 
 class Model(ActiveCoreModel):
     title = models.CharField(max_length=64)
-    slug = models.SlugField(unique=False)
+    slug = models.SlugField(unique=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='models')
     description = models.TextField(blank=True)
     image = FilerImageField(
@@ -36,7 +36,7 @@ class Model(ActiveCoreModel):
 
 class Product(ActiveCoreModel):
     title = models.CharField('Product title (without model)', max_length=64, blank=True)
-    slug = models.SlugField(unique=False)
+    slug = models.SlugField(unique=True)
     model = models.ForeignKey(Model, on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=0)
     discounted_price = models.DecimalField(
