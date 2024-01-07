@@ -106,7 +106,7 @@ class ContentBlockSerializer(serializers.ModelSerializer):
             'link_text',
             'cards',
             'banners',
-            'form',
+            'type',
         ]
 
     def get_cards(self, instance):

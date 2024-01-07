@@ -17,16 +17,18 @@ class Page(CoreModel):
 
 
 class ContentBlock(CoreModel):
-    class Form(models.TextChoices):
-        CONSULT = 'CONSULT', 'Get consultation form'
-        CATALOG = 'CATALOG', 'Get catalog form'
+    class Type(models.TextChoices):
+        CONSULT_FORM = 'CONSULT_FORM', 'Get consultation form'
+        CATALOG_FORM = 'CATALOG_FORM', 'Get catalog form'
+        BANNERS = 'BANNERS', 'Simple banners'
+        WIDE_BANNERS = 'WIDE_BANNERS', 'Wide banners'
 
     page = models.ForeignKey(Page, related_name='blocks', on_delete=models.CASCADE)
     inner_title = models.CharField(max_length=128)
     title = models.CharField(max_length=128, blank=True)
     link = models.CharField(max_length=128, blank=True)
     link_text = models.CharField(max_length=128, blank=True)
-    form = models.CharField(choices=Form.choices, blank=True)
+    type = models.CharField(choices=Type.choices, default=Type.BANNERS)
 
     def __str__(self):
         return self.inner_title
