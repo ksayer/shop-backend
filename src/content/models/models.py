@@ -53,6 +53,10 @@ class Banner(CoreModel):
     )
     image_position = models.CharField(max_length=32, choices=ImagePosition.choices, blank=True)
 
+    phone = models.CharField(max_length=256, blank=True)
+    address = models.CharField(max_length=256, blank=True)
+    email = models.CharField(max_length=256, blank=True)
+
     def __str__(self):
         return f'{self.block} - {self.title}'
 

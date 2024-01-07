@@ -38,6 +38,9 @@ class BannerSerializer(serializers.ModelSerializer):
             'image_position',
             'buttons',
             'mobile_image',
+            'phone',
+            'address',
+            'email',
             'image',
         ]
 
