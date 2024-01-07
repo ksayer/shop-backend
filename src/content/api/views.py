@@ -2,7 +2,14 @@ from django.db.models import Prefetch
 from rest_framework import generics
 
 from content.api.serializers import ContentBlockSerializer
-from content.models import Banner, ContentBlock, ModelCard, ProjectCard, FeedbackCard, Publication
+from content.models import (
+    Banner,
+    ContentBlock,
+    FeedbackCard,
+    ModelCard,
+    ProjectCard,
+    Publication,
+)
 
 
 class ContentBlockListAPIView(generics.ListAPIView):
@@ -11,13 +18,18 @@ class ContentBlockListAPIView(generics.ListAPIView):
         Prefetch('modelcards', ModelCard.objects.select_related('model__image')),
         Prefetch(
             'feedbackcards',
-            FeedbackCard.objects.select_related('feedback__avatar', 'feedback__project')
+            FeedbackCard.objects.select_related('feedback__avatar', 'feedback__project'),
         ),
         Prefetch(
             'projectcards', ProjectCard.objects.select_related('project').annotate_main_image()
         ),
+        Prefetch('publications', Publication.objects.select_related('image')),
         Prefetch(
-            'publications', Publication.objects.select_related('image')
+            'banners',
+            Banner.objects.select_related('image')
+            .filter(type=Banner.Type.CONSULTANT)
+            .order_by('?'),
+            to_attr='consultant',
         ),
     )
 

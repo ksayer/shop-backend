@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from projects.forms import ProjectImageInlineFormset
-from projects.models import Category, Project, ProjectImage, Feedback
+from projects.models import Category, Feedback, Project, ProjectImage
 
 
 class ProjectImageInline(admin.TabularInline):

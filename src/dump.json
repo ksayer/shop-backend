@@ -1,0 +1,4634 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$Svd6YIr6D7SmvBg9dQmozZ$f1KhEkE1yF/Bz2QMdjk2qRg64BXwakFOtQ+DDGWeozc=",
+      "last_login": "2024-01-06T20:10:19.334Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-01-06T20:09:56.049Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 1,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/f5/51/f5511930-1c74-418c-891a-0b6c8c3e6ffb/ny-3-main.jpg",
+      "modified": "2024-01-07T09:15:49.846Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 2,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/e7/e4/e7e45293-9b5a-4f3e-a8a5-e0edb1ba8833/ny-2-main.jpg",
+      "modified": "2024-01-06T20:20:55.134Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 3,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/57/6c/576c7765-31b1-4077-ac07-e7320a3fd218/magnitnaia_radiusnaia_sistema.jpg",
+      "modified": "2024-01-06T20:20:48.393Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 4,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/f3/99/f39925ad-af4f-4a13-bd0f-ab763ed404d7/showroommain.png",
+      "modified": "2024-01-07T09:15:49.978Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 5,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/04/05/04052f53-b2b8-44c3-82ae-f63d029a5032/eva_mini_white_model4.png",
+      "modified": "2024-01-06T20:56:35.396Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 7,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/06/9e/069ea82d-bc0f-465e-912a-14f7e5bfee55/extra_turn_white_main.png",
+      "modified": "2024-01-06T21:00:34.841Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 8,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/7c/56/7c567646-6e49-4b4c-97cf-9b3613b86dd9/fog-twm.png",
+      "modified": "2024-01-06T21:00:27.992Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 46,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/9e/20/9e20ff6c-facd-4468-8215-bafd3334da3e/spring-podves-white-main.png",
+      "modified": "2024-01-07T08:30:46.672Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 47,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/be/84/be844275-8ebd-47d6-8491-e9ddae8b2ad4/kontr_postavki.jpg",
+      "modified": "2024-01-07T08:34:32.117Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 48,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/88/7f/887ff6c0-7117-474b-8958-23f50ef8051a/zemelnyi_unikalnost.jpg",
+      "modified": "2024-01-07T15:21:18.794Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 49,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/e5/64/e5644411-5a33-4561-a34c-1b36fc5d10fb/otpravit-proekt-main.png",
+      "modified": "2024-01-07T08:54:55.012Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 50,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/4d/30/4d304174-640e-4107-915a-2b2801fc0a7a/oksana_1.png",
+      "modified": "2024-01-07T08:54:56.623Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 51,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/9f/95/9f950230-dcda-43fd-9aa2-0acd2c9f7195/kp1.png",
+      "modified": "2024-01-07T08:54:56.967Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 54,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/db/98/db98f933-d012-4bd6-98cb-2c9674f7960b/car.png",
+      "modified": "2024-01-07T08:54:59.200Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 56,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/b6/17/b6170ec8-4884-4ba3-b48c-12aafb31980f/svetoraschet.jpg",
+      "modified": "2024-01-07T09:21:15.588Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 57,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/54/f4/54f454c0-5336-4186-affb-98c222f7838a/demonstratsia.jpg",
+      "modified": "2024-01-07T09:21:17.232Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 60,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/7e/85/7e85a373-1b76-4da2-911e-2d6827b070d9/symbol_desk_color.png",
+      "modified": "2024-01-07T09:30:33.109Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 61,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/ae/3e/ae3e36f3-ba1a-458c-ab47-6e58f140d118/residence_main.jpg",
+      "modified": "2024-01-07T09:55:04.992Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 62,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/cd/7e/cd7e65ba-1ca3-494d-846f-7e214d6ded3e/bmw_1.jpg",
+      "modified": "2024-01-07T09:55:29.880Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 63,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/cd/b0/cdb0f937-2894-48d9-87ee-33c59b245aff/svet-28.jpg",
+      "modified": "2024-01-07T09:56:05.970Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 64,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/11/b8/11b8fdb3-ee82-4199-b9ee-ae8241391342/dsc07858.jpg",
+      "modified": "2024-01-07T10:18:18.174Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 65,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/ab/b6/abb6ffd9-3494-4a79-bce5-0a0edc320013/raisberg.jpg",
+      "modified": "2024-01-07T11:07:24.613Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 66,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/62/65/62657277-b85c-46e5-b925-ffdf525eec1a/photo_5258173648852859629_y.jpeg",
+      "modified": "2024-01-07T11:09:07.556Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 67,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/fd/d7/fdd702da-5eec-45cb-93ba-47c454152cc1/irina_i_nadezhda.jpeg",
+      "modified": "2024-01-07T11:10:00.886Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 68,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/da/cd/dacdc65e-af5f-4eb8-ac95-3ccda599baa7/boris_li_2.jpg",
+      "modified": "2024-01-07T11:11:08.957Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 69,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/bd/03/bd035257-fa80-473b-8196-fca5d6d7d566/wake_up_desk.jpg",
+      "modified": "2024-01-07T14:05:19.115Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 70,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/e6/98/e6983a81-226a-4433-a4a4-a2f433e8f6da/magnitnaia_radiusnaia_sistema_desk.jpg",
+      "modified": "2024-01-07T14:07:59.484Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 72,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/be/83/be83c610-8ac4-42fa-8c77-8ef5c2d92518/svetoraschet_desk.jpg",
+      "modified": "2024-01-07T14:28:10.319Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 73,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/23/78/23785643-36cc-4f77-b06e-659d075e128b/dlia_rozy__1_desk.jpg",
+      "modified": "2024-01-07T14:28:11.044Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 74,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/5b/a1/5ba17f01-62ab-45ab-b1fc-8bcec419bd9d/vybor_svetilnika_desk.jpg",
+      "modified": "2024-01-07T14:28:11.525Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 75,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/ea/c2/eac2781d-b7d4-4921-bded-4077ccea63b7/liner_zerkalo_desk.jpg",
+      "modified": "2024-01-07T14:28:12.026Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 76,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/e6/f3/e6f389ac-5ca9-4af1-b5aa-15035d5e6104/frame_1813.png",
+      "modified": "2024-01-07T14:42:07.892Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 77,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/e8/99/e8999a9a-0f32-4984-af52-156e90f1efbb/artplay_1.jpg",
+      "modified": "2024-01-07T14:43:57.749Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 78,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/d3/55/d355a8f5-3040-46e5-995a-35ff449176c1/vasileostrovskii_shourum.jpg",
+      "modified": "2024-01-07T14:54:39.494Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 79,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/59/f3/59f3146c-607d-4b7e-bdd5-895f3ef6fb79/about_desk.png",
+      "modified": "2024-01-07T14:55:50.905Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 81,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/ac/08/ac088146-ca07-486f-b9c4-d459461bc3cb/pr3mium_6k7_desk_f0.jpg",
+      "modified": "2024-01-07T15:27:32.467Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 82,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/f2/56/f25608e9-9ff4-40d4-b6f2-3a5dcabc14a0/111_interactive_lightmix.jpg",
+      "modified": "2024-01-07T15:19:33.529Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.source",
+    "pk": 83,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public/fd/ca/fdcae0b3-88d3-4edc-ba85-9838387db0c7/zf.jpg",
+      "modified": "2024-01-07T15:34:10.870Z"
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 1,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f5/51/f5511930-1c74-418c-891a-0b6c8c3e6ffb/ny-3-main.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-06T20:12:03.704Z",
+      "source": 1
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 2,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f5/51/f5511930-1c74-418c-891a-0b6c8c3e6ffb/ny-3-main.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:27:41.998Z",
+      "source": 1
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 3,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f5/51/f5511930-1c74-418c-891a-0b6c8c3e6ffb/ny-3-main.jpg__210x185_q85_subsampling-2_upscale.jpg",
+      "modified": "2024-01-06T20:12:05.185Z",
+      "source": 1
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 4,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f5/51/f5511930-1c74-418c-891a-0b6c8c3e6ffb/ny-3-main.jpg__420x370_q85_subsampling-2_upscale.jpg",
+      "modified": "2024-01-06T20:12:05.277Z",
+      "source": 1
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 5,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f5/51/f5511930-1c74-418c-891a-0b6c8c3e6ffb/ny-3-main.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-06T20:17:54.234Z",
+      "source": 1
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 6,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e7/e4/e7e45293-9b5a-4f3e-a8a5-e0edb1ba8833/ny-2-main.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-06T20:20:00.022Z",
+      "source": 2
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 7,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e7/e4/e7e45293-9b5a-4f3e-a8a5-e0edb1ba8833/ny-2-main.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-06T20:21:07.775Z",
+      "source": 2
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 8,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e7/e4/e7e45293-9b5a-4f3e-a8a5-e0edb1ba8833/ny-2-main.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-06T20:20:01.186Z",
+      "source": 2
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 9,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/57/6c/576c7765-31b1-4077-ac07-e7320a3fd218/magnitnaia_radiusnaia_sistema.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-06T20:20:35.029Z",
+      "source": 3
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 10,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/57/6c/576c7765-31b1-4077-ac07-e7320a3fd218/magnitnaia_radiusnaia_sistema.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-06T20:21:07.766Z",
+      "source": 3
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 11,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/57/6c/576c7765-31b1-4077-ac07-e7320a3fd218/magnitnaia_radiusnaia_sistema.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-06T20:20:36.047Z",
+      "source": 3
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 12,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/57/6c/576c7765-31b1-4077-ac07-e7320a3fd218/magnitnaia_radiusnaia_sistema.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-06T20:20:48.397Z",
+      "source": 3
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 13,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e7/e4/e7e45293-9b5a-4f3e-a8a5-e0edb1ba8833/ny-2-main.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-06T20:20:55.139Z",
+      "source": 2
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 14,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f3/99/f39925ad-af4f-4a13-bd0f-ab763ed404d7/showroommain.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-06T20:21:10.922Z",
+      "source": 4
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 15,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f3/99/f39925ad-af4f-4a13-bd0f-ab763ed404d7/showroommain.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-07T09:27:42.011Z",
+      "source": 4
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 16,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f3/99/f39925ad-af4f-4a13-bd0f-ab763ed404d7/showroommain.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-06T20:21:12.681Z",
+      "source": 4
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 17,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f3/99/f39925ad-af4f-4a13-bd0f-ab763ed404d7/showroommain.png__210x140_subsampling-2_upscale.png",
+      "modified": "2024-01-06T20:27:13.682Z",
+      "source": 4
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 18,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f3/99/f39925ad-af4f-4a13-bd0f-ab763ed404d7/showroommain.png__420x280_subsampling-2_upscale.png",
+      "modified": "2024-01-06T20:27:13.764Z",
+      "source": 4
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 19,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/04/05/04052f53-b2b8-44c3-82ae-f63d029a5032/eva_mini_white_model4.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-06T20:56:32.971Z",
+      "source": 5
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 20,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/04/05/04052f53-b2b8-44c3-82ae-f63d029a5032/eva_mini_white_model4.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-06T20:57:56.134Z",
+      "source": 5
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 21,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/04/05/04052f53-b2b8-44c3-82ae-f63d029a5032/eva_mini_white_model4.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-06T20:56:35.402Z",
+      "source": 5
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 25,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/06/9e/069ea82d-bc0f-465e-912a-14f7e5bfee55/extra_turn_white_main.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-06T20:59:03.851Z",
+      "source": 7
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 26,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/06/9e/069ea82d-bc0f-465e-912a-14f7e5bfee55/extra_turn_white_main.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-06T21:30:06.540Z",
+      "source": 7
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 27,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/06/9e/069ea82d-bc0f-465e-912a-14f7e5bfee55/extra_turn_white_main.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-06T20:59:05.257Z",
+      "source": 7
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 28,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/7c/56/7c567646-6e49-4b4c-97cf-9b3613b86dd9/fog-twm.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-06T21:00:10.609Z",
+      "source": 8
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 29,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/7c/56/7c567646-6e49-4b4c-97cf-9b3613b86dd9/fog-twm.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-06T21:30:06.542Z",
+      "source": 8
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 30,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/7c/56/7c567646-6e49-4b4c-97cf-9b3613b86dd9/fog-twm.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-06T21:00:12.029Z",
+      "source": 8
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 31,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/7c/56/7c567646-6e49-4b4c-97cf-9b3613b86dd9/fog-twm.png__160x160_crop_subsampling-2.png",
+      "modified": "2024-01-06T21:00:27.997Z",
+      "source": 8
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 32,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/06/9e/069ea82d-bc0f-465e-912a-14f7e5bfee55/extra_turn_white_main.png__160x160_crop_subsampling-2.png",
+      "modified": "2024-01-06T21:00:34.846Z",
+      "source": 7
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 83,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/9e/20/9e20ff6c-facd-4468-8215-bafd3334da3e/spring-podves-white-main.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-07T08:30:45.370Z",
+      "source": 46
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 84,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/9e/20/9e20ff6c-facd-4468-8215-bafd3334da3e/spring-podves-white-main.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-07T08:34:05.116Z",
+      "source": 46
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 85,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/9e/20/9e20ff6c-facd-4468-8215-bafd3334da3e/spring-podves-white-main.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-07T08:30:46.678Z",
+      "source": 46
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 86,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/be/84/be844275-8ebd-47d6-8491-e9ddae8b2ad4/kontr_postavki.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T08:34:28.568Z",
+      "source": 47
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 87,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/be/84/be844275-8ebd-47d6-8491-e9ddae8b2ad4/kontr_postavki.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T08:35:19.203Z",
+      "source": 47
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 88,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/be/84/be844275-8ebd-47d6-8491-e9ddae8b2ad4/kontr_postavki.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T08:34:32.125Z",
+      "source": 47
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 89,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/88/7f/887ff6c0-7117-474b-8958-23f50ef8051a/zemelnyi_unikalnost.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T08:35:23.810Z",
+      "source": 48
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 90,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/88/7f/887ff6c0-7117-474b-8958-23f50ef8051a/zemelnyi_unikalnost.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:21:35.025Z",
+      "source": 48
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 91,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/88/7f/887ff6c0-7117-474b-8958-23f50ef8051a/zemelnyi_unikalnost.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:21:16.174Z",
+      "source": 48
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 92,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e5/64/e5644411-5a33-4561-a34c-1b36fc5d10fb/otpravit-proekt-main.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-07T08:37:04.884Z",
+      "source": 49
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 93,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e5/64/e5644411-5a33-4561-a34c-1b36fc5d10fb/otpravit-proekt-main.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-07T09:01:02.471Z",
+      "source": 49
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 94,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e5/64/e5644411-5a33-4561-a34c-1b36fc5d10fb/otpravit-proekt-main.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-07T08:37:06.134Z",
+      "source": 49
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 95,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/4d/30/4d304174-640e-4107-915a-2b2801fc0a7a/oksana_1.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-07T08:38:04.899Z",
+      "source": 50
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 96,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/4d/30/4d304174-640e-4107-915a-2b2801fc0a7a/oksana_1.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-07T09:01:02.473Z",
+      "source": 50
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 97,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/4d/30/4d304174-640e-4107-915a-2b2801fc0a7a/oksana_1.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-07T08:38:06.740Z",
+      "source": 50
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 98,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/9f/95/9f950230-dcda-43fd-9aa2-0acd2c9f7195/kp1.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-07T08:38:57.531Z",
+      "source": 51
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 99,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/9f/95/9f950230-dcda-43fd-9aa2-0acd2c9f7195/kp1.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-07T09:01:02.458Z",
+      "source": 51
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 100,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/9f/95/9f950230-dcda-43fd-9aa2-0acd2c9f7195/kp1.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-07T08:38:58.843Z",
+      "source": 51
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 108,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/db/98/db98f933-d012-4bd6-98cb-2c9674f7960b/car.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-07T08:41:36.221Z",
+      "source": 54
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 109,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/db/98/db98f933-d012-4bd6-98cb-2c9674f7960b/car.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-07T09:01:02.462Z",
+      "source": 54
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 110,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/db/98/db98f933-d012-4bd6-98cb-2c9674f7960b/car.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-07T08:41:56.963Z",
+      "source": 54
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 114,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e5/64/e5644411-5a33-4561-a34c-1b36fc5d10fb/otpravit-proekt-main.png__160x160_crop_subsampling-2.png",
+      "modified": "2024-01-07T08:54:55.017Z",
+      "source": 49
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 115,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/4d/30/4d304174-640e-4107-915a-2b2801fc0a7a/oksana_1.png__160x160_crop_subsampling-2.png",
+      "modified": "2024-01-07T08:54:56.635Z",
+      "source": 50
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 116,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/9f/95/9f950230-dcda-43fd-9aa2-0acd2c9f7195/kp1.png__160x160_crop_subsampling-2.png",
+      "modified": "2024-01-07T08:54:56.974Z",
+      "source": 51
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 119,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/db/98/db98f933-d012-4bd6-98cb-2c9674f7960b/car.png__160x160_crop_subsampling-2.png",
+      "modified": "2024-01-07T08:54:59.217Z",
+      "source": 54
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 120,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/b6/17/b6170ec8-4884-4ba3-b48c-12aafb31980f/svetoraschet.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T09:01:21.658Z",
+      "source": 56
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 121,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/b6/17/b6170ec8-4884-4ba3-b48c-12aafb31980f/svetoraschet.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:27:42.024Z",
+      "source": 56
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 122,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/b6/17/b6170ec8-4884-4ba3-b48c-12aafb31980f/svetoraschet.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:01:30.435Z",
+      "source": 56
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 125,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/54/f4/54f454c0-5336-4186-affb-98c222f7838a/demonstratsia.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T09:03:50.025Z",
+      "source": 57
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 126,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/54/f4/54f454c0-5336-4186-affb-98c222f7838a/demonstratsia.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:27:41.987Z",
+      "source": 57
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 127,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/54/f4/54f454c0-5336-4186-affb-98c222f7838a/demonstratsia.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:03:51.223Z",
+      "source": 57
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 131,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f5/51/f5511930-1c74-418c-891a-0b6c8c3e6ffb/ny-3-main.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:15:49.853Z",
+      "source": 1
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 132,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f3/99/f39925ad-af4f-4a13-bd0f-ab763ed404d7/showroommain.png__160x160_crop_subsampling-2.png",
+      "modified": "2024-01-07T09:15:49.980Z",
+      "source": 4
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 133,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/b6/17/b6170ec8-4884-4ba3-b48c-12aafb31980f/svetoraschet.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:21:15.675Z",
+      "source": 56
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 134,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/54/f4/54f454c0-5336-4186-affb-98c222f7838a/demonstratsia.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:21:17.252Z",
+      "source": 57
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 172,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/7e/85/7e85a373-1b76-4da2-911e-2d6827b070d9/symbol_desk_color.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-07T09:30:28.869Z",
+      "source": 60
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 173,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/7e/85/7e85a373-1b76-4da2-911e-2d6827b070d9/symbol_desk_color.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-07T09:30:37.505Z",
+      "source": 60
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 174,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/7e/85/7e85a373-1b76-4da2-911e-2d6827b070d9/symbol_desk_color.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-07T09:30:33.117Z",
+      "source": 60
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 175,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ae/3e/ae3e36f3-ba1a-458c-ab47-6e58f140d118/residence_main.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T09:55:03.722Z",
+      "source": 61
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 176,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ae/3e/ae3e36f3-ba1a-458c-ab47-6e58f140d118/residence_main.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:55:26.366Z",
+      "source": 61
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 177,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ae/3e/ae3e36f3-ba1a-458c-ab47-6e58f140d118/residence_main.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:55:04.998Z",
+      "source": 61
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 178,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/cd/7e/cd7e65ba-1ca3-494d-846f-7e214d6ded3e/bmw_1.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T09:55:28.924Z",
+      "source": 62
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 179,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/cd/7e/cd7e65ba-1ca3-494d-846f-7e214d6ded3e/bmw_1.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:55:59.989Z",
+      "source": 62
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 180,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/cd/7e/cd7e65ba-1ca3-494d-846f-7e214d6ded3e/bmw_1.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:55:29.886Z",
+      "source": 62
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 181,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/cd/b0/cdb0f937-2894-48d9-87ee-33c59b245aff/svet-28.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T09:56:04.451Z",
+      "source": 63
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 182,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/cd/b0/cdb0f937-2894-48d9-87ee-33c59b245aff/svet-28.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:56:32.368Z",
+      "source": 63
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 183,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/cd/b0/cdb0f937-2894-48d9-87ee-33c59b245aff/svet-28.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:56:05.978Z",
+      "source": 63
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 184,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/11/b8/11b8fdb3-ee82-4199-b9ee-ae8241391342/dsc07858.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T09:56:35.007Z",
+      "source": 64
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 185,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/11/b8/11b8fdb3-ee82-4199-b9ee-ae8241391342/dsc07858.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T11:06:41.521Z",
+      "source": 64
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 186,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/11/b8/11b8fdb3-ee82-4199-b9ee-ae8241391342/dsc07858.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T09:56:37.204Z",
+      "source": 64
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 187,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/11/b8/11b8fdb3-ee82-4199-b9ee-ae8241391342/dsc07858.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T10:18:18.177Z",
+      "source": 64
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 188,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ab/b6/abb6ffd9-3494-4a79-bce5-0a0edc320013/raisberg.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T11:07:23.743Z",
+      "source": 65
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 189,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ab/b6/abb6ffd9-3494-4a79-bce5-0a0edc320013/raisberg.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T11:09:03.408Z",
+      "source": 65
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 190,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ab/b6/abb6ffd9-3494-4a79-bce5-0a0edc320013/raisberg.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T11:07:24.622Z",
+      "source": 65
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 191,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/62/65/62657277-b85c-46e5-b925-ffdf525eec1a/photo_5258173648852859629_y.jpeg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T11:09:06.209Z",
+      "source": 66
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 192,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/62/65/62657277-b85c-46e5-b925-ffdf525eec1a/photo_5258173648852859629_y.jpeg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T11:09:58.074Z",
+      "source": 66
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 193,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/62/65/62657277-b85c-46e5-b925-ffdf525eec1a/photo_5258173648852859629_y.jpeg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T11:09:07.564Z",
+      "source": 66
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 194,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/fd/d7/fdd702da-5eec-45cb-93ba-47c454152cc1/irina_i_nadezhda.jpeg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T11:10:00.098Z",
+      "source": 67
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 195,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/fd/d7/fdd702da-5eec-45cb-93ba-47c454152cc1/irina_i_nadezhda.jpeg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T11:10:26.981Z",
+      "source": 67
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 196,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/fd/d7/fdd702da-5eec-45cb-93ba-47c454152cc1/irina_i_nadezhda.jpeg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T11:10:00.894Z",
+      "source": 67
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 197,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/da/cd/dacdc65e-af5f-4eb8-ac95-3ccda599baa7/boris_li_2.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T11:10:29.588Z",
+      "source": 68
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 198,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/da/cd/dacdc65e-af5f-4eb8-ac95-3ccda599baa7/boris_li_2.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:04:44.313Z",
+      "source": 68
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 199,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/da/cd/dacdc65e-af5f-4eb8-ac95-3ccda599baa7/boris_li_2.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T11:10:30.378Z",
+      "source": 68
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 200,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/da/cd/dacdc65e-af5f-4eb8-ac95-3ccda599baa7/boris_li_2.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T11:11:08.960Z",
+      "source": 68
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 201,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/bd/03/bd035257-fa80-473b-8196-fca5d6d7d566/wake_up_desk.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T14:05:00.552Z",
+      "source": 69
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 202,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/bd/03/bd035257-fa80-473b-8196-fca5d6d7d566/wake_up_desk.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:06:11.755Z",
+      "source": 69
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 203,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/bd/03/bd035257-fa80-473b-8196-fca5d6d7d566/wake_up_desk.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:08:55.173Z",
+      "source": 69
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 204,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/bd/03/bd035257-fa80-473b-8196-fca5d6d7d566/wake_up_desk.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:05:19.118Z",
+      "source": 69
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 205,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e6/98/e6983a81-226a-4433-a4a4-a2f433e8f6da/magnitnaia_radiusnaia_sistema_desk.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T14:07:51.582Z",
+      "source": 70
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 206,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e6/98/e6983a81-226a-4433-a4a4-a2f433e8f6da/magnitnaia_radiusnaia_sistema_desk.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:08:42.960Z",
+      "source": 70
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 207,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e6/98/e6983a81-226a-4433-a4a4-a2f433e8f6da/magnitnaia_radiusnaia_sistema_desk.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:07:52.571Z",
+      "source": 70
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 208,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e6/98/e6983a81-226a-4433-a4a4-a2f433e8f6da/magnitnaia_radiusnaia_sistema_desk.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:07:59.487Z",
+      "source": 70
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 211,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/be/83/be83c610-8ac4-42fa-8c77-8ef5c2d92518/svetoraschet_desk.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T14:09:42.605Z",
+      "source": 72
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 212,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/be/83/be83c610-8ac4-42fa-8c77-8ef5c2d92518/svetoraschet_desk.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:41:47.747Z",
+      "source": 72
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 213,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/be/83/be83c610-8ac4-42fa-8c77-8ef5c2d92518/svetoraschet_desk.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:09:44.269Z",
+      "source": 72
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 214,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/23/78/23785643-36cc-4f77-b06e-659d075e128b/dlia_rozy__1_desk.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T14:10:19.540Z",
+      "source": 73
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 215,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/23/78/23785643-36cc-4f77-b06e-659d075e128b/dlia_rozy__1_desk.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:41:47.743Z",
+      "source": 73
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 216,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/23/78/23785643-36cc-4f77-b06e-659d075e128b/dlia_rozy__1_desk.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:10:21.170Z",
+      "source": 73
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 217,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/5b/a1/5ba17f01-62ab-45ab-b1fc-8bcec419bd9d/vybor_svetilnika_desk.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T14:11:40.268Z",
+      "source": 74
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 218,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/5b/a1/5ba17f01-62ab-45ab-b1fc-8bcec419bd9d/vybor_svetilnika_desk.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:41:47.753Z",
+      "source": 74
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 219,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/5b/a1/5ba17f01-62ab-45ab-b1fc-8bcec419bd9d/vybor_svetilnika_desk.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:11:41.134Z",
+      "source": 74
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 220,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ea/c2/eac2781d-b7d4-4921-bded-4077ccea63b7/liner_zerkalo_desk.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T14:12:02.495Z",
+      "source": 75
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 221,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ea/c2/eac2781d-b7d4-4921-bded-4077ccea63b7/liner_zerkalo_desk.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:41:47.765Z",
+      "source": 75
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 222,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ea/c2/eac2781d-b7d4-4921-bded-4077ccea63b7/liner_zerkalo_desk.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:12:04.129Z",
+      "source": 75
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 223,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/be/83/be83c610-8ac4-42fa-8c77-8ef5c2d92518/svetoraschet_desk.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:28:10.322Z",
+      "source": 72
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 224,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/23/78/23785643-36cc-4f77-b06e-659d075e128b/dlia_rozy__1_desk.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:28:11.048Z",
+      "source": 73
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 225,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/5b/a1/5ba17f01-62ab-45ab-b1fc-8bcec419bd9d/vybor_svetilnika_desk.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:28:11.528Z",
+      "source": 74
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 226,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ea/c2/eac2781d-b7d4-4921-bded-4077ccea63b7/liner_zerkalo_desk.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:28:12.035Z",
+      "source": 75
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 227,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e6/f3/e6f389ac-5ca9-4af1-b5aa-15035d5e6104/frame_1813.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-07T14:42:00.876Z",
+      "source": 76
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 228,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e6/f3/e6f389ac-5ca9-4af1-b5aa-15035d5e6104/frame_1813.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-07T14:43:32.666Z",
+      "source": 76
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 229,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e6/f3/e6f389ac-5ca9-4af1-b5aa-15035d5e6104/frame_1813.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-07T15:20:47.345Z",
+      "source": 76
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 230,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e6/f3/e6f389ac-5ca9-4af1-b5aa-15035d5e6104/frame_1813.png__160x160_crop_subsampling-2.png",
+      "modified": "2024-01-07T14:42:07.895Z",
+      "source": 76
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 231,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e8/99/e8999a9a-0f32-4984-af52-156e90f1efbb/artplay_1.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T14:43:35.110Z",
+      "source": 77
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 232,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e8/99/e8999a9a-0f32-4984-af52-156e90f1efbb/artplay_1.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:54:32.771Z",
+      "source": 77
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 233,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e8/99/e8999a9a-0f32-4984-af52-156e90f1efbb/artplay_1.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:24:18.204Z",
+      "source": 77
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 234,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/e8/99/e8999a9a-0f32-4984-af52-156e90f1efbb/artplay_1.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:43:57.753Z",
+      "source": 77
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 235,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/d3/55/d355a8f5-3040-46e5-995a-35ff449176c1/vasileostrovskii_shourum.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T14:54:35.486Z",
+      "source": 78
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 236,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/d3/55/d355a8f5-3040-46e5-995a-35ff449176c1/vasileostrovskii_shourum.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:55:45.110Z",
+      "source": 78
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 237,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/d3/55/d355a8f5-3040-46e5-995a-35ff449176c1/vasileostrovskii_shourum.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:22:49.359Z",
+      "source": 78
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 238,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/d3/55/d355a8f5-3040-46e5-995a-35ff449176c1/vasileostrovskii_shourum.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T14:54:39.499Z",
+      "source": 78
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 239,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/59/f3/59f3146c-607d-4b7e-bdd5-895f3ef6fb79/about_desk.png__180x180_crop_subsampling-2_upscale.png",
+      "modified": "2024-01-07T14:55:47.949Z",
+      "source": 79
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 240,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/59/f3/59f3146c-607d-4b7e-bdd5-895f3ef6fb79/about_desk.png__40x40_crop_subsampling-2.png",
+      "modified": "2024-01-07T15:04:25.361Z",
+      "source": 79
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 241,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/59/f3/59f3146c-607d-4b7e-bdd5-895f3ef6fb79/about_desk.png__80x80_crop_subsampling-2.png",
+      "modified": "2024-01-07T15:04:27.461Z",
+      "source": 79
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 242,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/59/f3/59f3146c-607d-4b7e-bdd5-895f3ef6fb79/about_desk.png__160x160_crop_subsampling-2.png",
+      "modified": "2024-01-07T14:55:50.909Z",
+      "source": 79
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 247,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ac/08/ac088146-ca07-486f-b9c4-d459461bc3cb/pr3mium_6k7_desk_f0.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T15:16:53.071Z",
+      "source": 81
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 248,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ac/08/ac088146-ca07-486f-b9c4-d459461bc3cb/pr3mium_6k7_desk_f0.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:33:56.316Z",
+      "source": 81
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 249,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ac/08/ac088146-ca07-486f-b9c4-d459461bc3cb/pr3mium_6k7_desk_f0.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:16:54.482Z",
+      "source": 81
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 250,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f2/56/f25608e9-9ff4-40d4-b6f2-3a5dcabc14a0/111_interactive_lightmix.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T15:19:29.245Z",
+      "source": 82
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 251,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f2/56/f25608e9-9ff4-40d4-b6f2-3a5dcabc14a0/111_interactive_lightmix.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:20:45.323Z",
+      "source": 82
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 252,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f2/56/f25608e9-9ff4-40d4-b6f2-3a5dcabc14a0/111_interactive_lightmix.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:19:31.090Z",
+      "source": 82
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 253,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/f2/56/f25608e9-9ff4-40d4-b6f2-3a5dcabc14a0/111_interactive_lightmix.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:19:33.533Z",
+      "source": 82
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 254,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/88/7f/887ff6c0-7117-474b-8958-23f50ef8051a/zemelnyi_unikalnost.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:21:18.799Z",
+      "source": 48
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 255,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/ac/08/ac088146-ca07-486f-b9c4-d459461bc3cb/pr3mium_6k7_desk_f0.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:27:32.470Z",
+      "source": 81
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 256,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/fd/ca/fdcae0b3-88d3-4edc-ba85-9838387db0c7/zf.jpg__180x180_q85_crop_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T15:33:58.494Z",
+      "source": 83
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 257,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/fd/ca/fdcae0b3-88d3-4edc-ba85-9838387db0c7/zf.jpg__40x40_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:34:04.971Z",
+      "source": 83
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 258,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/fd/ca/fdcae0b3-88d3-4edc-ba85-9838387db0c7/zf.jpg__210x104_q85_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T15:34:00.290Z",
+      "source": 83
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 259,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/fd/ca/fdcae0b3-88d3-4edc-ba85-9838387db0c7/zf.jpg__420x208_q85_subsampling-2_upscale.jpg",
+      "modified": "2024-01-07T15:34:00.328Z",
+      "source": 83
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 260,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/fd/ca/fdcae0b3-88d3-4edc-ba85-9838387db0c7/zf.jpg__80x80_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:34:07.732Z",
+      "source": 83
+    }
+  },
+  {
+    "model": "easy_thumbnails.thumbnail",
+    "pk": 261,
+    "fields": {
+      "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+      "name": "filer_public_thumbnails/filer_public/fd/ca/fdcae0b3-88d3-4edc-ba85-9838387db0c7/zf.jpg__160x160_q85_crop_subsampling-2.jpg",
+      "modified": "2024-01-07T15:34:10.873Z",
+      "source": 83
+    }
+  },
+  {
+    "model": "filer.folder",
+    "pk": 1,
+    "fields": {
+      "parent": null,
+      "name": "banners",
+      "owner": 1,
+      "uploaded_at": "2024-01-06T20:11:15.888Z",
+      "created_at": "2024-01-06T20:11:15.888Z",
+      "modified_at": "2024-01-06T20:11:15.888Z"
+    }
+  },
+  {
+    "model": "filer.folder",
+    "pk": 2,
+    "fields": {
+      "parent": null,
+      "name": "catalog",
+      "owner": 1,
+      "uploaded_at": "2024-01-06T20:56:22.546Z",
+      "created_at": "2024-01-06T20:56:22.546Z",
+      "modified_at": "2024-01-06T20:56:22.546Z"
+    }
+  },
+  {
+    "model": "filer.folder",
+    "pk": 3,
+    "fields": {
+      "parent": 2,
+      "name": "models",
+      "owner": 1,
+      "uploaded_at": "2024-01-06T20:56:26.733Z",
+      "created_at": "2024-01-06T20:56:26.733Z",
+      "modified_at": "2024-01-06T20:56:26.733Z"
+    }
+  },
+  {
+    "model": "filer.folder",
+    "pk": 4,
+    "fields": {
+      "parent": null,
+      "name": "projects",
+      "owner": 1,
+      "uploaded_at": "2024-01-07T09:54:57.408Z",
+      "created_at": "2024-01-07T09:54:57.408Z",
+      "modified_at": "2024-01-07T09:54:57.408Z"
+    }
+  },
+  {
+    "model": "filer.folder",
+    "pk": 5,
+    "fields": {
+      "parent": 4,
+      "name": "feedback",
+      "owner": 1,
+      "uploaded_at": "2024-01-07T11:07:01.768Z",
+      "created_at": "2024-01-07T11:07:01.768Z",
+      "modified_at": "2024-01-07T11:07:01.768Z"
+    }
+  },
+  {
+    "model": "filer.folder",
+    "pk": 6,
+    "fields": {
+      "parent": null,
+      "name": "publications",
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:04:55.744Z",
+      "created_at": "2024-01-07T14:04:55.744Z",
+      "modified_at": "2024-01-07T14:04:55.744Z"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 1,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/f5/51/f5511930-1c74-418c-891a-0b6c8c3e6ffb/ny-3-main.jpg",
+      "_file_size": 2859024,
+      "sha1": "7621cc20052709d106309ccd4386f5db47a2d3c6",
+      "has_all_mandatory_data": false,
+      "original_filename": "ny-3-main.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-06T20:12:03.297Z",
+      "modified_at": "2024-01-06T20:12:03.297Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 2,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/e7/e4/e7e45293-9b5a-4f3e-a8a5-e0edb1ba8833/ny-2-main.jpg",
+      "_file_size": 3014854,
+      "sha1": "3f0fab525d81879be1bc1f1f63fe0f2fd1742b4b",
+      "has_all_mandatory_data": false,
+      "original_filename": "ny-2-main.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-06T20:19:59.925Z",
+      "modified_at": "2024-01-06T20:19:59.925Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 3,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/57/6c/576c7765-31b1-4077-ac07-e7320a3fd218/magnitnaia_radiusnaia_sistema.jpg",
+      "_file_size": 1288806,
+      "sha1": "1e7dd7005b736ddab9b77daf53826081826836cd",
+      "has_all_mandatory_data": false,
+      "original_filename": "magnitnaia_radiusnaia_sistema.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-06T20:20:34.936Z",
+      "modified_at": "2024-01-06T20:20:34.936Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 4,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/f3/99/f39925ad-af4f-4a13-bd0f-ab763ed404d7/showroommain.png",
+      "_file_size": 759293,
+      "sha1": "528e573d2b30f3da25c944f2df4e81baf103ef2d",
+      "has_all_mandatory_data": false,
+      "original_filename": "showroommain.png",
+      "name": "",
+      "description": "",
+      "owner": 1,
+      "uploaded_at": "2024-01-06T20:21:10.881Z",
+      "modified_at": "2024-01-06T20:27:16.146Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 5,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 3,
+      "file": "filer_public/04/05/04052f53-b2b8-44c3-82ae-f63d029a5032/eva_mini_white_model4.png",
+      "_file_size": 477054,
+      "sha1": "d9a7fa55c0f7066c3140cc61279d992bc88c1a28",
+      "has_all_mandatory_data": false,
+      "original_filename": "eva_mini_white_model4.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-06T20:56:32.783Z",
+      "modified_at": "2024-01-06T20:56:32.783Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 7,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 3,
+      "file": "filer_public/06/9e/069ea82d-bc0f-465e-912a-14f7e5bfee55/extra_turn_white_main.png",
+      "_file_size": 258518,
+      "sha1": "ddec678ccc90c67c05b066e1586f206af38be60c",
+      "has_all_mandatory_data": false,
+      "original_filename": "extra_turn_white_main.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-06T20:59:03.779Z",
+      "modified_at": "2024-01-06T20:59:03.779Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 8,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 3,
+      "file": "filer_public/7c/56/7c567646-6e49-4b4c-97cf-9b3613b86dd9/fog-twm.png",
+      "_file_size": 180273,
+      "sha1": "699b5146d23b361b7f89f0b903710fd82d5f3f9a",
+      "has_all_mandatory_data": false,
+      "original_filename": "fog-twm.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-06T21:00:10.528Z",
+      "modified_at": "2024-01-06T21:00:10.528Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 46,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 3,
+      "file": "filer_public/9e/20/9e20ff6c-facd-4468-8215-bafd3334da3e/spring-podves-white-main.png",
+      "_file_size": 64105,
+      "sha1": "f808d06e72e809c58a7831586d7ea7920adc20c9",
+      "has_all_mandatory_data": false,
+      "original_filename": "spring-podves-white-main.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T08:30:45.246Z",
+      "modified_at": "2024-01-07T08:30:45.246Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 47,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/be/84/be844275-8ebd-47d6-8491-e9ddae8b2ad4/kontr_postavki.jpg",
+      "_file_size": 693349,
+      "sha1": "54cb7376921cb9de9179b64f61d3810486f55981",
+      "has_all_mandatory_data": false,
+      "original_filename": "kontr_postavki.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T08:34:28.531Z",
+      "modified_at": "2024-01-07T08:34:28.531Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 48,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/88/7f/887ff6c0-7117-474b-8958-23f50ef8051a/zemelnyi_unikalnost.jpg",
+      "_file_size": 1348094,
+      "sha1": "7431337ca24c967b6b17526a1deffe398cde9864",
+      "has_all_mandatory_data": false,
+      "original_filename": "zemelnyi_unikalnost.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T08:35:23.757Z",
+      "modified_at": "2024-01-07T08:35:23.757Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 49,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/e5/64/e5644411-5a33-4561-a34c-1b36fc5d10fb/otpravit-proekt-main.png",
+      "_file_size": 1300326,
+      "sha1": "e5b4ff1ce2d98892101615bc20f2578a63bb270a",
+      "has_all_mandatory_data": false,
+      "original_filename": "otpravit-proekt-main.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T08:37:04.816Z",
+      "modified_at": "2024-01-07T08:37:04.816Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 50,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/4d/30/4d304174-640e-4107-915a-2b2801fc0a7a/oksana_1.png",
+      "_file_size": 30971218,
+      "sha1": "c817455a2e31f1befcfd3ffe452fee7bea48cb1d",
+      "has_all_mandatory_data": false,
+      "original_filename": "oksana_1.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T08:38:04.034Z",
+      "modified_at": "2024-01-07T08:38:04.034Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 51,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/9f/95/9f950230-dcda-43fd-9aa2-0acd2c9f7195/kp1.png",
+      "_file_size": 19606481,
+      "sha1": "05690697038cc6daf61e58fb8e3af9c169c0a606",
+      "has_all_mandatory_data": false,
+      "original_filename": "kp1.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T08:38:56.888Z",
+      "modified_at": "2024-01-07T08:38:56.888Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 54,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/db/98/db98f933-d012-4bd6-98cb-2c9674f7960b/car.png",
+      "_file_size": 24886425,
+      "sha1": "5fa0ea6cf63d6a5d6fa36c474db0ae95ba9d08e2",
+      "has_all_mandatory_data": false,
+      "original_filename": "car.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T08:41:35.249Z",
+      "modified_at": "2024-01-07T08:41:35.249Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 56,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/b6/17/b6170ec8-4884-4ba3-b48c-12aafb31980f/svetoraschet.jpg",
+      "_file_size": 525475,
+      "sha1": "ae678474a2eae08b503aa26b7bd81ec27fa46416",
+      "has_all_mandatory_data": false,
+      "original_filename": "svetoraschet.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T09:01:21.616Z",
+      "modified_at": "2024-01-07T09:01:21.616Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 57,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/54/f4/54f454c0-5336-4186-affb-98c222f7838a/demonstratsia.jpg",
+      "_file_size": 85859,
+      "sha1": "e00bce9fecfbcc58446f32379670eb09797021da",
+      "has_all_mandatory_data": false,
+      "original_filename": "demonstratsia.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T09:03:49.993Z",
+      "modified_at": "2024-01-07T09:03:49.993Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 60,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/7e/85/7e85a373-1b76-4da2-911e-2d6827b070d9/symbol_desk_color.png",
+      "_file_size": 4283,
+      "sha1": "0ee08f8c16de06732f011ef81a7d05f20cdc9ee6",
+      "has_all_mandatory_data": false,
+      "original_filename": "symbol_desk_color.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T09:30:28.852Z",
+      "modified_at": "2024-01-07T09:30:28.852Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 61,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 4,
+      "file": "filer_public/ae/3e/ae3e36f3-ba1a-458c-ab47-6e58f140d118/residence_main.jpg",
+      "_file_size": 317204,
+      "sha1": "fb73c6702833cfc59415fc260145ad108cd0b531",
+      "has_all_mandatory_data": false,
+      "original_filename": "residence_main.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T09:55:03.601Z",
+      "modified_at": "2024-01-07T09:55:03.601Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 62,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 4,
+      "file": "filer_public/cd/7e/cd7e65ba-1ca3-494d-846f-7e214d6ded3e/bmw_1.jpg",
+      "_file_size": 2742493,
+      "sha1": "762287acfdf1595e298a8a382c5d047f44258f47",
+      "has_all_mandatory_data": false,
+      "original_filename": "bmw_1.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T09:55:28.819Z",
+      "modified_at": "2024-01-07T09:55:28.819Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 63,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 4,
+      "file": "filer_public/cd/b0/cdb0f937-2894-48d9-87ee-33c59b245aff/svet-28.jpg",
+      "_file_size": 15131561,
+      "sha1": "cccee26f761a7a0b1de709ebe1d13d632958311c",
+      "has_all_mandatory_data": false,
+      "original_filename": "svet-28.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T09:56:04.052Z",
+      "modified_at": "2024-01-07T09:56:04.052Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 64,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 4,
+      "file": "filer_public/11/b8/11b8fdb3-ee82-4199-b9ee-ae8241391342/dsc07858.jpg",
+      "_file_size": 562891,
+      "sha1": "c13933bf5ef1e812fcde050293f67f35286b42b2",
+      "has_all_mandatory_data": false,
+      "original_filename": "dsc07858.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T09:56:34.838Z",
+      "modified_at": "2024-01-07T09:56:34.838Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 65,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 5,
+      "file": "filer_public/ab/b6/abb6ffd9-3494-4a79-bce5-0a0edc320013/raisberg.jpg",
+      "_file_size": 125877,
+      "sha1": "a46fc5ca5bb7ad5ca0cb949227a352048c17274c",
+      "has_all_mandatory_data": false,
+      "original_filename": "raisberg.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T11:07:23.688Z",
+      "modified_at": "2024-01-07T11:07:23.688Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 66,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 5,
+      "file": "filer_public/62/65/62657277-b85c-46e5-b925-ffdf525eec1a/photo_5258173648852859629_y.jpeg",
+      "_file_size": 199716,
+      "sha1": "463c479e9e89892c6975e60ac242f7ec47b004a5",
+      "has_all_mandatory_data": false,
+      "original_filename": "photo_5258173648852859629_y.jpeg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T11:09:06.171Z",
+      "modified_at": "2024-01-07T11:09:06.171Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 67,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 5,
+      "file": "filer_public/fd/d7/fdd702da-5eec-45cb-93ba-47c454152cc1/irina_i_nadezhda.jpeg",
+      "_file_size": 78509,
+      "sha1": "57cf6ecaa40d8f884ddb3d367c16171d9c6d08ce",
+      "has_all_mandatory_data": false,
+      "original_filename": "irina_i_nadezhda.jpeg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T11:10:00.080Z",
+      "modified_at": "2024-01-07T11:10:00.081Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 68,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 5,
+      "file": "filer_public/da/cd/dacdc65e-af5f-4eb8-ac95-3ccda599baa7/boris_li_2.jpg",
+      "_file_size": 125708,
+      "sha1": "3eb0541770bfb474f7a6a94b9873809f750eab67",
+      "has_all_mandatory_data": false,
+      "original_filename": "boris_li_2.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T11:10:29.575Z",
+      "modified_at": "2024-01-07T11:10:29.575Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 69,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 6,
+      "file": "filer_public/bd/03/bd035257-fa80-473b-8196-fca5d6d7d566/wake_up_desk.jpg",
+      "_file_size": 284922,
+      "sha1": "3e05243e5b07e475544d2b2c1de887f6292a03ea",
+      "has_all_mandatory_data": false,
+      "original_filename": "wake_up_desk.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:05:00.463Z",
+      "modified_at": "2024-01-07T14:05:00.463Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 70,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 6,
+      "file": "filer_public/e6/98/e6983a81-226a-4433-a4a4-a2f433e8f6da/magnitnaia_radiusnaia_sistema_desk.jpg",
+      "_file_size": 69059,
+      "sha1": "0e590a807198319215c70620b46c15cb2fac5159",
+      "has_all_mandatory_data": false,
+      "original_filename": "magnitnaia_radiusnaia_sistema_desk.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:07:51.537Z",
+      "modified_at": "2024-01-07T14:07:51.537Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 72,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 6,
+      "file": "filer_public/be/83/be83c610-8ac4-42fa-8c77-8ef5c2d92518/svetoraschet_desk.jpg",
+      "_file_size": 150133,
+      "sha1": "7e93eb29f2450699b9a4e55fb8bb97904c8aaafc",
+      "has_all_mandatory_data": false,
+      "original_filename": "svetoraschet_desk.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:09:42.580Z",
+      "modified_at": "2024-01-07T14:09:42.580Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 73,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 6,
+      "file": "filer_public/23/78/23785643-36cc-4f77-b06e-659d075e128b/dlia_rozy__1_desk.jpg",
+      "_file_size": 202646,
+      "sha1": "f3a851b696478b5c6b9264596726efc8c989ade2",
+      "has_all_mandatory_data": false,
+      "original_filename": "dlia_rozy__1_desk.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:10:19.519Z",
+      "modified_at": "2024-01-07T14:10:19.519Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 74,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 6,
+      "file": "filer_public/5b/a1/5ba17f01-62ab-45ab-b1fc-8bcec419bd9d/vybor_svetilnika_desk.jpg",
+      "_file_size": 142547,
+      "sha1": "deae3120ae8749b8e986a62395c6b16b9bc5fe09",
+      "has_all_mandatory_data": false,
+      "original_filename": "vybor_svetilnika_desk.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:11:40.243Z",
+      "modified_at": "2024-01-07T14:11:40.243Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 75,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 6,
+      "file": "filer_public/ea/c2/eac2781d-b7d4-4921-bded-4077ccea63b7/liner_zerkalo_desk.jpg",
+      "_file_size": 272101,
+      "sha1": "6206c7730a9161b75dddf61e8f46a5ec7f09ce4c",
+      "has_all_mandatory_data": false,
+      "original_filename": "liner_zerkalo_desk.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:12:02.453Z",
+      "modified_at": "2024-01-07T14:12:02.453Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 76,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/e6/f3/e6f389ac-5ca9-4af1-b5aa-15035d5e6104/frame_1813.png",
+      "_file_size": 7620266,
+      "sha1": "4e2f9aec6c42439c1016e82b326d0db0b61940c1",
+      "has_all_mandatory_data": false,
+      "original_filename": "frame_1813.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:42:00.609Z",
+      "modified_at": "2024-01-07T14:42:00.609Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 77,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/e8/99/e8999a9a-0f32-4984-af52-156e90f1efbb/artplay_1.jpg",
+      "_file_size": 4702356,
+      "sha1": "66517335718e4adcdeb07b936214099543e570df",
+      "has_all_mandatory_data": false,
+      "original_filename": "artplay_1.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:43:34.935Z",
+      "modified_at": "2024-01-07T14:43:34.935Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 78,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/d3/55/d355a8f5-3040-46e5-995a-35ff449176c1/vasileostrovskii_shourum.jpg",
+      "_file_size": 447101,
+      "sha1": "bd353e7f2fd6b898a92ae8eb1d0306a150c658bd",
+      "has_all_mandatory_data": false,
+      "original_filename": "vasileostrovskii_shourum.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:54:35.422Z",
+      "modified_at": "2024-01-07T14:54:35.422Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 79,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/59/f3/59f3146c-607d-4b7e-bdd5-895f3ef6fb79/about_desk.png",
+      "_file_size": 279861,
+      "sha1": "a0ae98301e81286f2141824cdbe60ffa74c4fb5b",
+      "has_all_mandatory_data": false,
+      "original_filename": "about_desk.png",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T14:55:47.883Z",
+      "modified_at": "2024-01-07T14:55:47.883Z",
+      "is_public": true,
+      "mime_type": "image/png"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 81,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/ac/08/ac088146-ca07-486f-b9c4-d459461bc3cb/pr3mium_6k7_desk_f0.jpg",
+      "_file_size": 261473,
+      "sha1": "92cd322e3f9f9489efef2c2c1b32253943205f32",
+      "has_all_mandatory_data": false,
+      "original_filename": "pr3mium_6k7_desk_f0.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T15:16:53.045Z",
+      "modified_at": "2024-01-07T15:16:53.045Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 82,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/f2/56/f25608e9-9ff4-40d4-b6f2-3a5dcabc14a0/111_interactive_lightmix.jpg",
+      "_file_size": 568292,
+      "sha1": "7e486a9e68c284009af859c8b92ea36d35e47066",
+      "has_all_mandatory_data": false,
+      "original_filename": "111_interactive_lightmix.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T15:19:29.200Z",
+      "modified_at": "2024-01-07T15:19:29.200Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.file",
+    "pk": 83,
+    "fields": {
+      "polymorphic_ctype": 16,
+      "folder": 1,
+      "file": "filer_public/fd/ca/fdcae0b3-88d3-4edc-ba85-9838387db0c7/zf.jpg",
+      "_file_size": 839284,
+      "sha1": "0d5c3594bbcc3b546066cdd2824ce77e6eb2845d",
+      "has_all_mandatory_data": false,
+      "original_filename": "zf.jpg",
+      "name": "",
+      "description": null,
+      "owner": 1,
+      "uploaded_at": "2024-01-07T15:33:58.402Z",
+      "modified_at": "2024-01-07T15:33:58.402Z",
+      "is_public": true,
+      "mime_type": "image/jpeg"
+    }
+  },
+  {
+    "model": "filer.clipboard",
+    "pk": 1,
+    "fields": {
+      "user": 1
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 1,
+    "fields": {
+      "_height": 1753.0,
+      "_width": 2000.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 2,
+    "fields": {
+      "_height": 1753.0,
+      "_width": 2000.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 3,
+    "fields": {
+      "_height": 2240.0,
+      "_width": 2468.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 4,
+    "fields": {
+      "_height": 560.0,
+      "_width": 840.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "420,280",
+      "optimized": true
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 5,
+    "fields": {
+      "_height": 1650.0,
+      "_width": 2935.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 7,
+    "fields": {
+      "_height": 944.0,
+      "_width": 1680.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 8,
+    "fields": {
+      "_height": 1125.0,
+      "_width": 2000.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 46,
+    "fields": {
+      "_height": 1100.0,
+      "_width": 1956.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 47,
+    "fields": {
+      "_height": 763.0,
+      "_width": 896.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 48,
+    "fields": {
+      "_height": 946.0,
+      "_width": 1920.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 49,
+    "fields": {
+      "_height": 840.0,
+      "_width": 1680.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 50,
+    "fields": {
+      "_height": 3359.0,
+      "_width": 6718.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 51,
+    "fields": {
+      "_height": 3359.0,
+      "_width": 6718.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 54,
+    "fields": {
+      "_height": 3359.0,
+      "_width": 6718.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 56,
+    "fields": {
+      "_height": 639.0,
+      "_width": 1278.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 57,
+    "fields": {
+      "_height": 637.0,
+      "_width": 1274.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 60,
+    "fields": {
+      "_height": 419.0,
+      "_width": 838.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 61,
+    "fields": {
+      "_height": 1667.0,
+      "_width": 2500.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 62,
+    "fields": {
+      "_height": 1848.0,
+      "_width": 2768.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 63,
+    "fields": {
+      "_height": 3925.0,
+      "_width": 5887.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 64,
+    "fields": {
+      "_height": 2748.0,
+      "_width": 4114.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 65,
+    "fields": {
+      "_height": 500.0,
+      "_width": 500.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 66,
+    "fields": {
+      "_height": 1280.0,
+      "_width": 1280.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 67,
+    "fields": {
+      "_height": 800.0,
+      "_width": 800.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 68,
+    "fields": {
+      "_height": 500.0,
+      "_width": 500.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 69,
+    "fields": {
+      "_height": 850.0,
+      "_width": 1998.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 70,
+    "fields": {
+      "_height": 850.0,
+      "_width": 1517.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 72,
+    "fields": {
+      "_height": 850.0,
+      "_width": 1133.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 73,
+    "fields": {
+      "_height": 850.0,
+      "_width": 1210.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 74,
+    "fields": {
+      "_height": 850.0,
+      "_width": 1275.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 75,
+    "fields": {
+      "_height": 850.0,
+      "_width": 1997.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 76,
+    "fields": {
+      "_height": 2288.0,
+      "_width": 2688.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 77,
+    "fields": {
+      "_height": 2456.0,
+      "_width": 3680.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 78,
+    "fields": {
+      "_height": 560.0,
+      "_width": 840.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 79,
+    "fields": {
+      "_height": 944.0,
+      "_width": 1920.0,
+      "_transparent": true,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 81,
+    "fields": {
+      "_height": 720.0,
+      "_width": 840.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 82,
+    "fields": {
+      "_height": 1334.0,
+      "_width": 2000.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "admintools.filerimage",
+    "pk": 83,
+    "fields": {
+      "_height": 850.0,
+      "_width": 1726.0,
+      "_transparent": false,
+      "default_alt_text": null,
+      "default_caption": null,
+      "subject_location": "",
+      "optimized": false
+    }
+  },
+  {
+    "model": "catalog.group",
+    "pk": "6e9c13ab-a1ff-4b46-af7f-e43949d1cac1",
+    "fields": {
+      "created": "2024-01-06T20:54:44.875Z",
+      "updated": "2024-01-06T20:54:44.875Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Интерьерные"
+    }
+  },
+  {
+    "model": "catalog.group",
+    "pk": "723fe642-e99e-4bd1-b474-7492eb70adbe",
+    "fields": {
+      "created": "2024-01-06T20:54:50.311Z",
+      "updated": "2024-01-06T20:54:50.311Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Дизайнерские"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": "2eac94d1-acbf-4fa1-9ab2-1a43a3e40738",
+    "fields": {
+      "created": "2024-01-06T20:55:23.745Z",
+      "updated": "2024-01-06T20:55:23.745Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Встраиваемые",
+      "group": "6e9c13ab-a1ff-4b46-af7f-e43949d1cac1"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": "6b6d5922-b3ea-4cd1-b66e-10da93b3ab34",
+    "fields": {
+      "created": "2024-01-06T21:00:03.746Z",
+      "updated": "2024-01-06T21:00:03.746Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Настольные",
+      "group": "723fe642-e99e-4bd1-b474-7492eb70adbe"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": "92c7f94a-bbdf-450e-89eb-faeefff4326a",
+    "fields": {
+      "created": "2024-01-06T20:58:56.205Z",
+      "updated": "2024-01-06T20:58:56.205Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Накладные",
+      "group": "6e9c13ab-a1ff-4b46-af7f-e43949d1cac1"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": "b6cee968-382d-4401-97d8-8289bae258c0",
+    "fields": {
+      "created": "2024-01-06T20:57:55.038Z",
+      "updated": "2024-01-06T20:57:55.038Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Подвесные",
+      "group": "6e9c13ab-a1ff-4b46-af7f-e43949d1cac1"
+    }
+  },
+  {
+    "model": "catalog.model",
+    "pk": "75ff2caf-bf69-4b42-b0d0-81b5d124a77f",
+    "fields": {
+      "created": "2024-01-06T20:57:00.086Z",
+      "updated": "2024-01-06T20:57:00.086Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Eva",
+      "slug": "eva",
+      "category": "2eac94d1-acbf-4fa1-9ab2-1a43a3e40738",
+      "description": "Серия встраиваемых светильников Eva noframe для основного и дополнительного освещения.<br>Воплощённая в модели безрамочная эстетика позволяет установить светильник на одном уровне с потолком без видимых рамок. Особое строение линзы и рефлектора позволяет добиться равномерного света и свести к минимум слепящий эффект.\r\n<br><br>\r\nКроме представленных классических белого и чёрного цветов, корпус светильника возможно окрасить в любой другой цвет по палитре RAL.\r\n<br><br>\r\nРегулировка яркости светового потока производится при помощи механического диммера RLC (TRIAC) или интегрируется в любую систему управления (DALI).",
+      "image": 5
+    }
+  },
+  {
+    "model": "catalog.model",
+    "pk": "824c5644-39a2-4c4a-943b-a42fcfa6e09f",
+    "fields": {
+      "created": "2024-01-06T21:00:13.134Z",
+      "updated": "2024-01-07T08:31:25.737Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Fog Table",
+      "slug": "fog-table",
+      "category": "6b6d5922-b3ea-4cd1-b66e-10da93b3ab34",
+      "description": "Настольный светильник Fog table станет дополнительным украшением вашего интерьера. Классическая форма идеально впишется в пространство, а матовый плафон обеспечит мягкое и теплое свечение на 360° и добавит нотку уюта.\r\n<br><br>\r\nКроме представленных классических белого и чёрного цветов, основание светильника возможно окрасить в любой другой цвет по палитре RAL.\r\nА также светильник интегрируется с голосовым помощником Алиса, что делает его использование максимально комфортным.",
+      "image": 8
+    }
+  },
+  {
+    "model": "catalog.model",
+    "pk": "85398734-501f-443d-81fa-086f915b2421",
+    "fields": {
+      "created": "2024-01-07T08:31:03.364Z",
+      "updated": "2024-01-07T08:31:25.732Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Spring",
+      "slug": "spring-p",
+      "category": "b6cee968-382d-4401-97d8-8289bae258c0",
+      "description": "",
+      "image": 46
+    }
+  },
+  {
+    "model": "catalog.model",
+    "pk": "8e2df560-e9b7-47d0-b2eb-4470fbe18eaa",
+    "fields": {
+      "created": "2024-01-06T20:59:07.025Z",
+      "updated": "2024-01-07T08:31:25.735Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Extra",
+      "slug": "extra",
+      "category": "92c7f94a-bbdf-450e-89eb-faeefff4326a",
+      "description": "Серия накладных светильников Extra для основного освещения. Благодаря уникальной линзе светильник сочетает в себе направленный и рассеянный свет. \r\n<br><br>Инновационные технологии рассеивания света позволяют создать равномерное освещение, не создавая тени и бликов, или сфокусировать световой поток. Особая конструкция линзы сводит к минимуму слепящий эффект. Для создания световых эффектов, доступны сменные фильтры.\r\n<br><br>\r\nКроме представленных классических белого и чёрного цветов, корпус светильника возможно окрасить в любой другой цвет по палитре RAL.\r\n<br><br>\r\nРегулировка яркости светового потока производится при помощи механического диммера RLC (TRIAC) или интегрируется в любую систему управления (DALI).",
+      "image": 7
+    }
+  },
+  {
+    "model": "content.page",
+    "pk": "24a5d941-b9cd-4a14-b078-087fcb382060",
+    "fields": {
+      "created": "2024-01-07T15:03:03.736Z",
+      "updated": "2024-01-07T15:03:03.736Z",
+      "ordering": 0,
+      "inner_title": "О компании",
+      "title": "О компании",
+      "slug": "about"
+    }
+  },
+  {
+    "model": "content.page",
+    "pk": "4a530275-eae9-4558-a3cb-f0025814ea7f",
+    "fields": {
+      "created": "2024-01-06T20:16:56.035Z",
+      "updated": "2024-01-06T20:16:56.035Z",
+      "ordering": 0,
+      "inner_title": "Home Page",
+      "title": "Shop",
+      "slug": "root"
+    }
+  },
+  {
+    "model": "content.page",
+    "pk": "be8e8fbc-235e-448c-bcc7-3aa184efebed",
+    "fields": {
+      "created": "2024-01-07T14:40:05.590Z",
+      "updated": "2024-01-07T14:40:05.590Z",
+      "ordering": 0,
+      "inner_title": "Контакты",
+      "title": "Контакты",
+      "slug": "contacts"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "0384bf30-6e3d-4697-a08b-ddf95688facd",
+    "fields": {
+      "created": "2024-01-07T09:57:22.682Z",
+      "updated": "2024-01-07T10:03:32.134Z",
+      "ordering": 5,
+      "page": "4a530275-eae9-4558-a3cb-f0025814ea7f",
+      "inner_title": "Проекты",
+      "title": "Проекты",
+      "link": "",
+      "link_text": "",
+      "type": "BANNERS"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "057388f1-079c-4c8f-b97b-a0263d6c7993",
+    "fields": {
+      "created": "2024-01-07T09:34:37.036Z",
+      "updated": "2024-01-07T15:30:01.271Z",
+      "ordering": 2,
+      "page": "4a530275-eae9-4558-a3cb-f0025814ea7f",
+      "inner_title": "Форма подбора светильников",
+      "title": "",
+      "link": "",
+      "link_text": "",
+      "type": "CONSULT_FORM"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "1af7ece7-7b23-4594-845d-38ab0236c895",
+    "fields": {
+      "created": "2024-01-07T13:08:06.816Z",
+      "updated": "2024-01-07T13:08:06.816Z",
+      "ordering": 8,
+      "page": "4a530275-eae9-4558-a3cb-f0025814ea7f",
+      "inner_title": "Публикации",
+      "title": "Публикации",
+      "link": "",
+      "link_text": "",
+      "type": "BANNERS"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "45e8073d-3948-45bb-8956-99c4add978d5",
+    "fields": {
+      "created": "2024-01-07T14:43:37.158Z",
+      "updated": "2024-01-07T14:43:37.158Z",
+      "ordering": 0,
+      "page": "be8e8fbc-235e-448c-bcc7-3aa184efebed",
+      "inner_title": "Страничка контактов",
+      "title": "",
+      "link": "",
+      "link_text": "",
+      "type": "BANNERS"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "558bb77e-fac7-4f0b-b31c-6b044ff57182",
+    "fields": {
+      "created": "2024-01-07T15:34:25.005Z",
+      "updated": "2024-01-07T15:34:25.005Z",
+      "ordering": 0,
+      "page": "24a5d941-b9cd-4a14-b078-087fcb382060",
+      "inner_title": "Широкий баннер \"О компании\"",
+      "title": "",
+      "link": "",
+      "link_text": "",
+      "type": "WIDE_BANNERS"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "5bd06120-5a40-4494-a3eb-e31113eb8ab4",
+    "fields": {
+      "created": "2024-01-07T15:03:57.093Z",
+      "updated": "2024-01-07T15:03:57.093Z",
+      "ordering": 0,
+      "page": "24a5d941-b9cd-4a14-b078-087fcb382060",
+      "inner_title": "Баннеры страницы \"О компании\"",
+      "title": "",
+      "link": "",
+      "link_text": "",
+      "type": "BANNERS"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "713a96bb-ddf2-4cfa-abe5-0805005516b6",
+    "fields": {
+      "created": "2024-01-06T20:37:00.016Z",
+      "updated": "2024-01-06T21:10:54.142Z",
+      "ordering": 1,
+      "page": "4a530275-eae9-4558-a3cb-f0025814ea7f",
+      "inner_title": "Новые серии светильников",
+      "title": "Новые серии светильников",
+      "link": "https://google.com",
+      "link_text": "Все светильники",
+      "type": "BANNERS"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "923d4889-3f2a-43e1-89d7-d344b691342d",
+    "fields": {
+      "created": "2024-01-06T21:30:22.520Z",
+      "updated": "2024-01-06T21:31:15.829Z",
+      "ordering": 3,
+      "page": "4a530275-eae9-4558-a3cb-f0025814ea7f",
+      "inner_title": "Второй блок баннеров на главной",
+      "title": "",
+      "link": "",
+      "link_text": "",
+      "type": "BANNERS"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "a60e9a0e-2ee9-418d-bbe8-32c3f0d6e20e",
+    "fields": {
+      "created": "2024-01-07T09:35:16.341Z",
+      "updated": "2024-01-07T15:30:09.452Z",
+      "ordering": 4,
+      "page": "4a530275-eae9-4558-a3cb-f0025814ea7f",
+      "inner_title": "Форма получения каталога",
+      "title": "",
+      "link": "",
+      "link_text": "",
+      "type": "CATALOG_FORM"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "acaec915-e76b-45ab-a326-9a612968972c",
+    "fields": {
+      "created": "2024-01-06T21:32:30.888Z",
+      "updated": "2024-01-06T21:34:36.027Z",
+      "ordering": 6,
+      "page": "4a530275-eae9-4558-a3cb-f0025814ea7f",
+      "inner_title": "Как мы работаем",
+      "title": "Как мы работаем",
+      "link": "",
+      "link_text": "",
+      "type": "BANNERS"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "b61b6b40-eda1-40b0-8537-56c01f105b6b",
+    "fields": {
+      "created": "2024-01-07T13:07:45.300Z",
+      "updated": "2024-01-07T13:07:51.662Z",
+      "ordering": 7,
+      "page": "4a530275-eae9-4558-a3cb-f0025814ea7f",
+      "inner_title": "Отзывы о нашей продукции",
+      "title": "Отзывы о нашей продукции",
+      "link": "",
+      "link_text": "",
+      "type": "BANNERS"
+    }
+  },
+  {
+    "model": "content.contentblock",
+    "pk": "f0ceb0fc-da9f-4e94-aae0-48ca66ece5ae",
+    "fields": {
+      "created": "2024-01-06T20:17:16.228Z",
+      "updated": "2024-01-06T20:17:16.228Z",
+      "ordering": 0,
+      "page": "4a530275-eae9-4558-a3cb-f0025814ea7f",
+      "inner_title": "Первый блок на главной",
+      "title": "",
+      "link": "",
+      "link_text": "",
+      "type": "BANNERS"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "08a43e53-783c-4775-8a9e-df14f089929c",
+    "fields": {
+      "created": "2024-01-07T15:21:22.178Z",
+      "updated": "2024-01-07T15:25:00.649Z",
+      "ordering": 4,
+      "block": "5bd06120-5a40-4494-a3eb-e31113eb8ab4",
+      "pre_title": "",
+      "title": "Уникальные решения",
+      "subtitle": "",
+      "description": "Над созданием уникальной системы освещения работают лучшие специалисты компании. Воплотите в жизнь свою идею, вдохните новые краски в дизайн интерьера, выбирайте лучшее освещение.",
+      "mobile_image": true,
+      "image": 48,
+      "image_position": "left",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "0f2f2afa-3df2-4ac9-bcfd-e808e82f6610",
+    "fields": {
+      "created": "2024-01-07T15:20:50.924Z",
+      "updated": "2024-01-07T15:20:50.924Z",
+      "ordering": 3,
+      "block": "5bd06120-5a40-4494-a3eb-e31113eb8ab4",
+      "pre_title": "",
+      "title": "Индивидуальный подход",
+      "subtitle": "",
+      "description": "При выборе светильника из каталога продукции, мы можем изменить его параметры согласно вашим потребностям. Цвет, фактура, материал или комплектующие, всё это возможно индивидуализировать под клиента.\r\n<br><br>\r\nПерсональный консультант бесплатно подготовит для вас светотехнический расчет и поможет с выбором оптимальной осветительной системы.",
+      "mobile_image": true,
+      "image": 76,
+      "image_position": "",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "140154d8-b82d-4902-a5cf-cb10555f789b",
+    "fields": {
+      "created": "2024-01-07T08:37:16.696Z",
+      "updated": "2024-01-07T09:22:28.014Z",
+      "ordering": 0,
+      "block": "acaec915-e76b-45ab-a326-9a612968972c",
+      "pre_title": "Шаг 1",
+      "title": "Отправляйте проект",
+      "subtitle": "",
+      "description": "Заполните форму обратной связи, отправив свой дизайн-проект на расчет нашему специалисту.",
+      "mobile_image": false,
+      "image": 49,
+      "image_position": "left",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "1579aa7f-2177-494d-9d02-5eb8f71ac403",
+    "fields": {
+      "created": "2024-01-07T14:43:37.161Z",
+      "updated": "2024-01-07T14:51:48.779Z",
+      "ordering": 1,
+      "block": "45e8073d-3948-45bb-8956-99c4add978d5",
+      "pre_title": "",
+      "title": "Центральный офис в Москве \"ARTPLAY\"",
+      "subtitle": "",
+      "description": "",
+      "mobile_image": true,
+      "image": 77,
+      "image_position": "right",
+      "phone": "+799999565",
+      "address": "ул. Нижняя Сыромятническая д.10, стр. 5",
+      "email": "sale@ledmonster.ru",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "1597027a-1f4d-43a3-8620-9045c1de2adf",
+    "fields": {
+      "created": "2024-01-07T08:39:21.385Z",
+      "updated": "2024-01-07T09:22:10.481Z",
+      "ordering": 2,
+      "block": "acaec915-e76b-45ab-a326-9a612968972c",
+      "pre_title": "Шаг 3",
+      "title": "Формирование предложения",
+      "subtitle": "",
+      "description": "По итогам встречи, персональный консультант сформирует для вас подробное коммерческое предложение, на основе которого будет строиться дальнейшее сотрудничество. Вам остается лишь согласовать его или внести необходимые правки.",
+      "mobile_image": false,
+      "image": 51,
+      "image_position": "left",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "1717da39-ce3d-4bef-ad40-f129d955e57d",
+    "fields": {
+      "created": "2024-01-07T14:56:00.413Z",
+      "updated": "2024-01-07T14:56:09.385Z",
+      "ordering": 3,
+      "block": "45e8073d-3948-45bb-8956-99c4add978d5",
+      "pre_title": "",
+      "title": "О компании",
+      "subtitle": "",
+      "description": "Компания Ledmonster основана в 2012 году и является одним из ведущих производителей светодиодных светильников в России. Обладая собственными производственными мощностями в России, на площади более 2 000 м2, Ledmonster создаёт серийные и эксклюзивные светотехнические решения. Специалисты компании изготавливают до 600 000 светильников в год. Постоянный ассортимент насчитывает более 1 000 моделей светильников в наличии.",
+      "mobile_image": true,
+      "image": 79,
+      "image_position": "",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "175acb5b-6ed8-4e69-b3ff-fa5c78d7b5a8",
+    "fields": {
+      "created": "2024-01-07T08:34:36.091Z",
+      "updated": "2024-01-07T08:34:36.091Z",
+      "ordering": 0,
+      "block": "923d4889-3f2a-43e1-89d7-d344b691342d",
+      "pre_title": "",
+      "title": "Контрактные поставки",
+      "subtitle": "",
+      "description": "Надежный и гибкий поставщик светильников на заказ — важный фактор успеха любого проекта. Для реализации самых сложных и нестандартных задач предоставляем производственный потенциал и более 1000 модификаций светильников из нового каталога, которые могут быть специально адаптированы под ваши индивидуальные требования и потребности.",
+      "mobile_image": true,
+      "image": 47,
+      "image_position": "left",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "1bb38e40-9d78-42c9-b07d-1a23bdef4ac6",
+    "fields": {
+      "created": "2024-01-07T08:41:58.781Z",
+      "updated": "2024-01-07T09:22:34.751Z",
+      "ordering": 5,
+      "block": "acaec915-e76b-45ab-a326-9a612968972c",
+      "pre_title": "Шаг 6",
+      "title": "Оплата и доставка",
+      "subtitle": "",
+      "description": "Доставка светильников по Москве и Санкт-Петребургу бесплатная, сроком до 2 дней. По вопросам доставки в другие города и страны, обращайтесь к персональному консультанту. Оплата производится любым удобным способом.",
+      "mobile_image": false,
+      "image": 54,
+      "image_position": "right",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "40635c1c-7659-4d77-b649-bc454886b2bb",
+    "fields": {
+      "created": "2024-01-07T15:34:25.006Z",
+      "updated": "2024-01-07T16:45:02.645Z",
+      "ordering": 0,
+      "block": "558bb77e-fac7-4f0b-b31c-6b044ff57182",
+      "pre_title": "",
+      "title": "",
+      "subtitle": "",
+      "description": "",
+      "mobile_image": true,
+      "image": 83,
+      "image_position": "",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "HERO"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "4eb42a89-d133-45f6-af89-bb371d8bc10f",
+    "fields": {
+      "created": "2024-01-06T20:21:35.049Z",
+      "updated": "2024-01-06T20:26:37.518Z",
+      "ordering": 3,
+      "block": "f0ceb0fc-da9f-4e94-aae0-48ca66ece5ae",
+      "pre_title": "",
+      "title": "Лаборатории света Ledmonster",
+      "subtitle": "",
+      "description": "Наши интерактивные пространства позволят вам оценить все особенности света, такие как оттенок, интенсивность, возможности диммирования и создания световых сценариев. Вы получите реальные впечатления и научитесь правильно выбирать светильники для создания идеального освещения в вашем пространстве.",
+      "mobile_image": true,
+      "image": 4,
+      "image_position": "right",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "547353ab-c3cc-4a45-bfd1-161f495bb7b5",
+    "fields": {
+      "created": "2024-01-07T15:19:57.329Z",
+      "updated": "2024-01-07T15:20:09.318Z",
+      "ordering": 2,
+      "block": "5bd06120-5a40-4494-a3eb-e31113eb8ab4",
+      "pre_title": "",
+      "title": "Функциональность",
+      "subtitle": "",
+      "description": "Каждый светильник может быть легко интегрирован в систему умного дома и управляться через мобильное приложение. Настройки света очень гибкие: вы можете регулировать температуру и яркость света, чтобы реализовать любые задачи. Светильники могут использоваться для основного освещения, для зонирования пространства или в качестве декоративной подсветки.",
+      "mobile_image": true,
+      "image": 82,
+      "image_position": "right",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "55042408-4c7c-40cd-9a45-fa60fa73bbc8",
+    "fields": {
+      "created": "2024-01-06T20:18:35.423Z",
+      "updated": "2024-01-06T20:18:35.423Z",
+      "ordering": 0,
+      "block": "f0ceb0fc-da9f-4e94-aae0-48ca66ece5ae",
+      "pre_title": "",
+      "title": "Уважаемые партнеры и дорогие друзья!",
+      "subtitle": "",
+      "description": "Поздравляем вас с Новым годом и Рождеством! <br>\r\nПусть он подарит много идей и творческого вдохновения!<br>\r\nОт всей души желаем успеха, здоровья и счастья вам и вашим близким!<br>\r\nПусть все задуманное обязательно сбудется!",
+      "mobile_image": true,
+      "image": 1,
+      "image_position": "right",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "5e96f65f-e7d1-43f1-82f4-52055b2822f3",
+    "fields": {
+      "created": "2024-01-07T08:40:06.138Z",
+      "updated": "2024-01-07T09:22:18.294Z",
+      "ordering": 3,
+      "block": "acaec915-e76b-45ab-a326-9a612968972c",
+      "pre_title": "Шаг 4",
+      "title": "Светотехнический расчет",
+      "subtitle": "",
+      "description": "Как только вы согласовали проект, наши инженеры приступают к светотехническому расчету, который позволяет определить тип, число и мощность светильников, необходимых для вашего пространства. Вычисления производятся заранее в специализированной программе, поскольку от них зависят дальнейшие электротехнические работы.",
+      "mobile_image": false,
+      "image": 56,
+      "image_position": "right",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "6100fc39-77d2-45a7-b653-79295899078d",
+    "fields": {
+      "created": "2024-01-07T14:43:37.159Z",
+      "updated": "2024-01-07T14:43:37.159Z",
+      "ordering": 0,
+      "block": "45e8073d-3948-45bb-8956-99c4add978d5",
+      "pre_title": "",
+      "title": "Свяжитесь с нами",
+      "subtitle": "",
+      "description": "Напишите нам в любой удобный мессенджер. Персональный консультант в режиме \"онлайн\" с 10 до 20 часов по московскому времени ответит на все вопросы.",
+      "mobile_image": true,
+      "image": 76,
+      "image_position": "",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "6ecb51f9-4792-43a8-9b4b-f39654278292",
+    "fields": {
+      "created": "2024-01-07T08:38:08.789Z",
+      "updated": "2024-01-07T09:22:25.457Z",
+      "ordering": 1,
+      "block": "acaec915-e76b-45ab-a326-9a612968972c",
+      "pre_title": "Шаг 2",
+      "title": "Обратная связь",
+      "subtitle": "",
+      "description": "После рассмотрения проекта, персональный консультант свяжется с вами для уточнения всех деталей: пригласит вас в шоурум или же назначит онлайн-встречу, в ходе которой вы детально обсуждаете проект, рассматриваете всевозможные варианты освещения и ближе знакомитесь с ассортиментом компании.",
+      "mobile_image": false,
+      "image": 50,
+      "image_position": "right",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "6fcbc9b6-61cd-4c94-a8fc-4253fa1d3be3",
+    "fields": {
+      "created": "2024-01-07T15:24:24.152Z",
+      "updated": "2024-01-07T15:24:56.425Z",
+      "ordering": 5,
+      "block": "5bd06120-5a40-4494-a3eb-e31113eb8ab4",
+      "pre_title": "",
+      "title": "Центральный офис в Москве «ARTPLAY»",
+      "subtitle": "",
+      "description": "",
+      "mobile_image": true,
+      "image": 77,
+      "image_position": "right",
+      "phone": "+798959595",
+      "address": "Нижняя Сыромятническая ул., 10, стр. 5",
+      "email": "sale@ledmonster.ru",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "83fdd7c2-460c-4bfd-940b-93bbe2bb8d5d",
+    "fields": {
+      "created": "2024-01-07T08:40:47.492Z",
+      "updated": "2024-01-07T09:22:21.757Z",
+      "ordering": 4,
+      "block": "acaec915-e76b-45ab-a326-9a612968972c",
+      "pre_title": "Шаг 5",
+      "title": "Демонстрация",
+      "subtitle": "",
+      "description": "При необходимости наш специалист всегда готов приехать с образцами на объект, осуществить замеры и примерку осветительных приборов. Выезд осуществляется абсолютно бесплатно.",
+      "mobile_image": false,
+      "image": 57,
+      "image_position": "left",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "93061d6f-0025-4048-8f2c-bd1e8343692a",
+    "fields": {
+      "created": "2024-01-07T08:35:32.457Z",
+      "updated": "2024-01-07T08:35:32.457Z",
+      "ordering": 1,
+      "block": "923d4889-3f2a-43e1-89d7-d344b691342d",
+      "pre_title": "",
+      "title": "Уникальные решения",
+      "subtitle": "",
+      "description": "Эксклюзивный светильник, созданный по авторскому эскизу из натуральных материалов, может стать уникальным элементом декора, подчеркивающим индивидуальность и стильность интерьера. Такое решение будет эстетично и функционально, обеспечивая оптимальное освещение проекта и создавая уютную атмосферу.",
+      "mobile_image": true,
+      "image": 48,
+      "image_position": "left",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "aad94d74-eca0-4c4b-b397-e0cd0948d2eb",
+    "fields": {
+      "created": "2024-01-07T15:04:32.872Z",
+      "updated": "2024-01-07T15:04:32.872Z",
+      "ordering": 0,
+      "block": "5bd06120-5a40-4494-a3eb-e31113eb8ab4",
+      "pre_title": "",
+      "title": "О компании",
+      "subtitle": "",
+      "description": "Ledmonster - компания, основанная в 2012 году и являющаяся одним из лидеров в производстве светодиодных светильников в Восточной Европе. На площади более 2 000 м2 расположены собственные производственные мощности в России, где создаются как серийные, так и эксклюзивные светотехнические решения. Компания выпускает до 600 000 светильников ежегодно и постоянно находится в наличии более 1 000 моделей светильников.\r\n<br><br>\r\nОсновным активом компании являются ее высококвалифицированные сотрудники, среди которых инженеры, разработчики, технологи, дизайнеры и персональные консультанты с глубоким пониманием светотехники. Сотрудники компании регулярно проходят курсы повышения квалификации и следят за последними трендами в мире дизайна и интерьера, что позволяет создавать уникальные световые решения для любого проекта.",
+      "mobile_image": true,
+      "image": 79,
+      "image_position": "right",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "ccbd8efe-aaed-42e0-9569-2d706fa5c497",
+    "fields": {
+      "created": "2024-01-06T20:20:06.420Z",
+      "updated": "2024-01-06T20:26:37.528Z",
+      "ordering": 1,
+      "block": "f0ceb0fc-da9f-4e94-aae0-48ca66ece5ae",
+      "pre_title": "",
+      "title": "Режим работы в новогодние праздники",
+      "subtitle": "",
+      "description": "<b>Москва \"ARTPLAY\"</b>\r\n<br>\r\nС 30 декабря по 3 января — выходные дни.<br>\r\n4, 5, 6 января шоурум работает с 10 до 19 часов.<br>\r\n7 января — выходной день.<br>\r\nС 8 января шоурум начинает работать в обычном режиме с 10 до 19 часов.<br>\r\n <br><br>\r\n<b>Санкт-Петербург ТЦ \"Василеостровский\"</b><br>\r\n31 декабря с 10 до 16 часов.<br>\r\n6 января с 10 до 18 часов.<br>\r\n1, 2, 7 января — выходные дни.<br>\r\nВ остальные дни шоурум работает в обычном режиме с 10 до 20 часов.",
+      "mobile_image": true,
+      "image": 2,
+      "image_position": "right",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "da74e0a0-3271-458b-b3a2-e77504a997db",
+    "fields": {
+      "created": "2024-01-07T14:54:37.766Z",
+      "updated": "2024-01-07T14:54:47.231Z",
+      "ordering": 2,
+      "block": "45e8073d-3948-45bb-8956-99c4add978d5",
+      "pre_title": "",
+      "title": "Дистрибьютор в Санкт-Петербурге \"Василеостровский\"",
+      "subtitle": "",
+      "description": "",
+      "mobile_image": true,
+      "image": 78,
+      "image_position": "right",
+      "phone": "+7856215485",
+      "address": "ул. Нижняя Сыромятническая д.10, стр. 5",
+      "email": "spb@ledmonster.ru",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "e48d7a9d-8868-4023-9c5a-8f2704a52ac8",
+    "fields": {
+      "created": "2024-01-07T15:05:45.883Z",
+      "updated": "2024-01-07T15:16:57.680Z",
+      "ordering": 1,
+      "block": "5bd06120-5a40-4494-a3eb-e31113eb8ab4",
+      "pre_title": "",
+      "title": "Премиальные материалы",
+      "subtitle": "",
+      "description": "Мы гарантируем использование только премиальных материалов в производстве своих светильников. Корпуса наших изделий изготавливаются из цельного алюминия, однако для решения эксклюзивных задач мы готовы использовать любые другие материалы и облицовки. Кроме того, мы используем комплектующие только от ведущих мировых производителей, чтобы минимизировать вероятность производственного брака.",
+      "mobile_image": true,
+      "image": 81,
+      "image_position": "",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "f10184e5-5265-4236-b65a-457a790b55f1",
+    "fields": {
+      "created": "2024-01-07T15:23:07.944Z",
+      "updated": "2024-01-07T15:23:07.944Z",
+      "ordering": 6,
+      "block": "5bd06120-5a40-4494-a3eb-e31113eb8ab4",
+      "pre_title": "",
+      "title": "Дистрибьютор в Санкт-Петербурге «Василеостровский»",
+      "subtitle": "",
+      "description": "",
+      "mobile_image": true,
+      "image": 78,
+      "image_position": "right",
+      "phone": "+78126465088",
+      "address": "Железноводская ул., д.3, секция 37",
+      "email": "spb@ledmonster.ru",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "fc6a58a3-f3c4-4d2e-a6aa-d2225b96a80f",
+    "fields": {
+      "created": "2024-01-06T20:20:51.983Z",
+      "updated": "2024-01-06T20:26:37.526Z",
+      "ordering": 2,
+      "block": "f0ceb0fc-da9f-4e94-aae0-48ca66ece5ae",
+      "pre_title": "",
+      "title": "Магнитная система Universe",
+      "subtitle": "",
+      "description": "Этот удобный и инновационный конструктор позволит вам создавать неповторимые сценарии освещения. Благодаря магнитному основанию светильников, вы сможете легко перемещать их по всей длине системы без лишних усилий.\r\n<br><br>\r\nКаждый светильник в системе Universe оснащен уникальной оптикой, которая обеспечивает равномерный и комфортный свет в помещении. Создавайте свой собственный дизайн освещения и наслаждайтесь уютной атмосферой!",
+      "mobile_image": true,
+      "image": 3,
+      "image_position": "left",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.banner",
+    "pk": "fee6c362-96a2-4b72-934f-73af0bc4c546",
+    "fields": {
+      "created": "2024-01-07T08:43:11.165Z",
+      "updated": "2024-01-07T09:30:35.295Z",
+      "ordering": 6,
+      "block": "acaec915-e76b-45ab-a326-9a612968972c",
+      "pre_title": "",
+      "title": "Гарантия",
+      "subtitle": "",
+      "description": "Гарантия на все световые решения составляет 5 лет. После окончания гарантии вам всегда будет доступно пост-гарантийное обслуживание. Кроме того, на центральном складе поддерживается постоянное наличие необходимых комплектующих, благодаря чему замена будет произведена оперативно и не займет много времени.",
+      "mobile_image": false,
+      "image": 60,
+      "image_position": "left",
+      "phone": "",
+      "address": "",
+      "email": "",
+      "type": "SIMPLE"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "1f9bc7b6-d924-412c-9155-ce6a688adad7",
+    "fields": {
+      "created": "2024-01-06T20:20:51.984Z",
+      "updated": "2024-01-06T20:20:51.984Z",
+      "ordering": 0,
+      "text": "Подробнее",
+      "link": "google.com",
+      "banner": "fc6a58a3-f3c4-4d2e-a6aa-d2225b96a80f"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "20a0a20e-390d-494a-905b-a52eaa5004d1",
+    "fields": {
+      "created": "2024-01-07T14:56:00.414Z",
+      "updated": "2024-01-07T14:56:00.414Z",
+      "ordering": 0,
+      "text": "Подробнее",
+      "link": "google.com",
+      "banner": "1717da39-ce3d-4bef-ad40-f129d955e57d"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "46280d60-335d-412c-a1e7-d50488fc27db",
+    "fields": {
+      "created": "2024-01-07T08:34:36.094Z",
+      "updated": "2024-01-07T08:34:36.094Z",
+      "ordering": 0,
+      "text": "Подробнее",
+      "link": "google.com",
+      "banner": "175acb5b-6ed8-4e69-b3ff-fa5c78d7b5a8"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "5c67e012-b922-488f-8ae9-4f56da7ce571",
+    "fields": {
+      "created": "2024-01-07T14:43:37.162Z",
+      "updated": "2024-01-07T14:43:37.162Z",
+      "ordering": 0,
+      "text": "Whatsapp",
+      "link": "google.com",
+      "banner": "6100fc39-77d2-45a7-b653-79295899078d"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "889dd0c0-7f01-4202-9999-b1f9adbd693a",
+    "fields": {
+      "created": "2024-01-07T14:43:37.163Z",
+      "updated": "2024-01-07T14:43:37.163Z",
+      "ordering": 1,
+      "text": "Telegram",
+      "link": "ya.ru",
+      "banner": "6100fc39-77d2-45a7-b653-79295899078d"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "8e1a6ae0-f053-48fc-b8d7-096db1f55f92",
+    "fields": {
+      "created": "2024-01-07T14:43:37.163Z",
+      "updated": "2024-01-07T14:43:37.163Z",
+      "ordering": 2,
+      "text": "Маршрут",
+      "link": "google.com",
+      "banner": "1579aa7f-2177-494d-9d02-5eb8f71ac403"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "c46f7fe3-1bb8-448c-8024-7004bd941eb5",
+    "fields": {
+      "created": "2024-01-07T14:54:37.768Z",
+      "updated": "2024-01-07T14:54:37.768Z",
+      "ordering": 0,
+      "text": "Маршрут",
+      "link": "google.com",
+      "banner": "da74e0a0-3271-458b-b3a2-e77504a997db"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "d0e77546-b6ca-4784-b58c-eb2836b58f7f",
+    "fields": {
+      "created": "2024-01-07T15:24:24.153Z",
+      "updated": "2024-01-07T15:24:24.153Z",
+      "ordering": 0,
+      "text": "Маршрут",
+      "link": "google.com",
+      "banner": "6fcbc9b6-61cd-4c94-a8fc-4253fa1d3be3"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "d5e2836d-3f5e-4d35-8c85-c8d2dd0f2204",
+    "fields": {
+      "created": "2024-01-07T08:37:16.698Z",
+      "updated": "2024-01-07T08:37:16.698Z",
+      "ordering": 0,
+      "text": "Отправить проект",
+      "link": "google.com",
+      "banner": "140154d8-b82d-4902-a5cf-cb10555f789b"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "e1d5b641-52f5-40d3-8c30-79badfb4f8a7",
+    "fields": {
+      "created": "2024-01-07T08:35:32.459Z",
+      "updated": "2024-01-07T08:35:32.459Z",
+      "ordering": 0,
+      "text": "Подробнее",
+      "link": "google.com",
+      "banner": "93061d6f-0025-4048-8f2c-bd1e8343692a"
+    }
+  },
+  {
+    "model": "content.button",
+    "pk": "f3cf91f3-f2ba-4045-a63e-995c83507351",
+    "fields": {
+      "created": "2024-01-07T15:23:07.946Z",
+      "updated": "2024-01-07T15:23:07.946Z",
+      "ordering": 0,
+      "text": "Маршрут",
+      "link": "google.com",
+      "banner": "f10184e5-5265-4236-b65a-457a790b55f1"
+    }
+  },
+  {
+    "model": "content.modelcard",
+    "pk": "5c9a6b67-fa19-4653-99f8-5e61ae5e340b",
+    "fields": {
+      "created": "2024-01-06T21:01:32.935Z",
+      "updated": "2024-01-07T09:17:40.732Z",
+      "ordering": 0,
+      "block": "713a96bb-ddf2-4cfa-abe5-0805005516b6",
+      "title": "Серия Eva",
+      "arrow": false,
+      "text": "Светильник без видимых рамок идеально подходит как для общего освещения, так и для дополнительного.",
+      "model": "75ff2caf-bf69-4b42-b0d0-81b5d124a77f"
+    }
+  },
+  {
+    "model": "content.modelcard",
+    "pk": "8a0c2538-94b7-4c3a-9aef-a9a0d2162b29",
+    "fields": {
+      "created": "2024-01-06T21:02:42.190Z",
+      "updated": "2024-01-06T21:02:42.190Z",
+      "ordering": 3,
+      "block": "713a96bb-ddf2-4cfa-abe5-0805005516b6",
+      "title": "Серия Fog Table",
+      "arrow": false,
+      "text": "Роскошный настольный светильник с рассеиванием света 360°, создает мягкую теплую атмосферу, Идеальный выбор для любого проекта.",
+      "model": "824c5644-39a2-4c4a-943b-a42fcfa6e09f"
+    }
+  },
+  {
+    "model": "content.modelcard",
+    "pk": "8a6159df-2ad8-4956-ba01-8df04fb0e09b",
+    "fields": {
+      "created": "2024-01-06T21:02:18.104Z",
+      "updated": "2024-01-06T21:02:18.104Z",
+      "ordering": 2,
+      "block": "713a96bb-ddf2-4cfa-abe5-0805005516b6",
+      "title": "Серия Extra",
+      "arrow": false,
+      "text": "Инновационные технологии рассеивания света позволяют создать равномерное освещение, не создавая тени и бликов, или сфокусировать световой поток.",
+      "model": "8e2df560-e9b7-47d0-b2eb-4470fbe18eaa"
+    }
+  },
+  {
+    "model": "content.modelcard",
+    "pk": "cfaebbd3-40a3-4d2a-903e-2c77795222f2",
+    "fields": {
+      "created": "2024-01-07T08:32:13.539Z",
+      "updated": "2024-01-07T08:32:13.540Z",
+      "ordering": 1,
+      "block": "713a96bb-ddf2-4cfa-abe5-0805005516b6",
+      "title": "Серия Spring",
+      "arrow": false,
+      "text": "Устанавливается с помощью специальной закладной из гипса, что позволяет скрыть видимые линии и создать эффект безрамочного освещения.",
+      "model": "85398734-501f-443d-81fa-086f915b2421"
+    }
+  },
+  {
+    "model": "content.projectcard",
+    "pk": "29b0589c-f961-41e5-a3fb-7f1a4f46e4de",
+    "fields": {
+      "created": "2024-01-07T09:58:00.537Z",
+      "updated": "2024-01-07T14:27:39.227Z",
+      "ordering": 0,
+      "block": "0384bf30-6e3d-4697-a08b-ddf95688facd",
+      "title": "ЖК Московский 172",
+      "arrow": true,
+      "text": "ЖК Московский 172",
+      "project": "02dcafe8-c1e1-4f63-931c-42b10d0d12cc"
+    }
+  },
+  {
+    "model": "content.projectcard",
+    "pk": "75f662f2-8d6e-4b52-bb76-311ba529f174",
+    "fields": {
+      "created": "2024-01-07T09:58:58.455Z",
+      "updated": "2024-01-07T14:27:46.467Z",
+      "ordering": 3,
+      "block": "0384bf30-6e3d-4697-a08b-ddf95688facd",
+      "title": "Резиденции Москва",
+      "arrow": true,
+      "text": "Москва, ул. Охотный Ряд, д.2",
+      "project": "972266ed-2d04-4f9f-917f-db819e11ea31"
+    }
+  },
+  {
+    "model": "content.projectcard",
+    "pk": "84a10a21-ecae-4468-bced-015263ee7361",
+    "fields": {
+      "created": "2024-01-07T09:58:34.011Z",
+      "updated": "2024-01-07T14:27:44.379Z",
+      "ordering": 2,
+      "block": "0384bf30-6e3d-4697-a08b-ddf95688facd",
+      "title": "Автосалон BMW",
+      "arrow": true,
+      "text": "Автопорт BMW",
+      "project": "24b73925-9fa8-41d4-8123-5778c4f8b444"
+    }
+  },
+  {
+    "model": "content.projectcard",
+    "pk": "8d170d20-3bcc-4340-82e0-d74c297c243e",
+    "fields": {
+      "created": "2024-01-07T09:58:18.737Z",
+      "updated": "2024-01-07T14:27:41.625Z",
+      "ordering": 1,
+      "block": "0384bf30-6e3d-4697-a08b-ddf95688facd",
+      "title": "ЖК Capital Towers",
+      "arrow": true,
+      "text": "Краснопресненская наб., 14, с1",
+      "project": "9b306f8f-7d2d-4a17-aafc-bd59831b7d23"
+    }
+  },
+  {
+    "model": "content.feedbackcard",
+    "pk": "04615093-9b8e-49a5-b9f9-c7f005424a7d",
+    "fields": {
+      "created": "2024-01-07T13:09:12.779Z",
+      "updated": "2024-01-07T13:09:24.745Z",
+      "ordering": 1,
+      "block": "b61b6b40-eda1-40b0-8537-56c01f105b6b",
+      "feedback": "b1d1b7dc-25f6-42e3-967a-d98299398464"
+    }
+  },
+  {
+    "model": "content.feedbackcard",
+    "pk": "4431b492-8ed9-43a7-97c8-82767ef4f0c5",
+    "fields": {
+      "created": "2024-01-07T13:08:59.814Z",
+      "updated": "2024-01-07T13:09:24.747Z",
+      "ordering": 2,
+      "block": "b61b6b40-eda1-40b0-8537-56c01f105b6b",
+      "feedback": "8afbe790-2d48-448c-93f4-f1bfd9571e9f"
+    }
+  },
+  {
+    "model": "content.feedbackcard",
+    "pk": "463b65f9-cfbe-49e1-b27d-1ff0e504c965",
+    "fields": {
+      "created": "2024-01-07T13:09:21.156Z",
+      "updated": "2024-01-07T13:09:21.156Z",
+      "ordering": 0,
+      "block": "b61b6b40-eda1-40b0-8537-56c01f105b6b",
+      "feedback": "cc29a543-1521-4582-bc4d-70c69e995586"
+    }
+  },
+  {
+    "model": "content.feedbackcard",
+    "pk": "77a60db0-700a-48bb-b2ab-32a723509d98",
+    "fields": {
+      "created": "2024-01-07T13:08:52.487Z",
+      "updated": "2024-01-07T13:09:24.749Z",
+      "ordering": 3,
+      "block": "b61b6b40-eda1-40b0-8537-56c01f105b6b",
+      "feedback": "202e8a3d-0fbe-411d-a162-e7c4aaba2cfc"
+    }
+  },
+  {
+    "model": "content.publication",
+    "pk": "00e6b8aa-82fe-49f0-aa58-1ae40616a791",
+    "fields": {
+      "created": "2024-01-07T14:11:43.313Z",
+      "updated": "2024-01-07T14:28:26.790Z",
+      "ordering": 1,
+      "title": "Выбираем светильник премиум качества",
+      "arrow": true,
+      "text": "фывфыв",
+      "block": "1af7ece7-7b23-4594-845d-38ab0236c895",
+      "image": 74,
+      "slug": "vybiraem-svetilnik-premium-kachestva"
+    }
+  },
+  {
+    "model": "content.publication",
+    "pk": "2e03c8f9-1d2d-4cae-8177-0599523d2942",
+    "fields": {
+      "created": "2024-01-07T14:06:29.771Z",
+      "updated": "2024-01-07T14:28:14.509Z",
+      "ordering": 5,
+      "title": "Магнитная система освещения",
+      "arrow": true,
+      "text": "qweqwe",
+      "block": "1af7ece7-7b23-4594-845d-38ab0236c895",
+      "image": 70,
+      "slug": "magnitnaya-sistema-osvesheniya-mast-hev-etogo-goda"
+    }
+  },
+  {
+    "model": "content.publication",
+    "pk": "488e04e2-1c92-40a4-b2c8-9770ffbc7a84",
+    "fields": {
+      "created": "2024-01-07T14:12:30.833Z",
+      "updated": "2024-01-07T14:28:30.077Z",
+      "ordering": 0,
+      "title": "Вау-эффект в интерьере",
+      "arrow": true,
+      "text": "ыфвфыв",
+      "block": "1af7ece7-7b23-4594-845d-38ab0236c895",
+      "image": 75,
+      "slug": "vau-effekt-v-interere-kakie-svetilniki-vybrat"
+    }
+  },
+  {
+    "model": "content.publication",
+    "pk": "578531af-a8ce-4eee-bff4-7fd87d8071cf",
+    "fields": {
+      "created": "2024-01-07T14:09:06.926Z",
+      "updated": "2024-01-07T14:28:17.070Z",
+      "ordering": 4,
+      "title": "Популярные решения в освещении",
+      "arrow": true,
+      "text": "фывфыв",
+      "block": "1af7ece7-7b23-4594-845d-38ab0236c895",
+      "image": 69,
+      "slug": "populyarnye-resheniya-dlya-osvesheniya"
+    }
+  },
+  {
+    "model": "content.publication",
+    "pk": "80323851-be54-4b82-a601-a03cf539fa0f",
+    "fields": {
+      "created": "2024-01-07T14:09:55.219Z",
+      "updated": "2024-01-07T14:28:19.666Z",
+      "ordering": 3,
+      "title": "Планировка освещения",
+      "arrow": true,
+      "text": "фывфыв",
+      "block": "1af7ece7-7b23-4594-845d-38ab0236c895",
+      "image": 72,
+      "slug": "planirovka-sveta-ne-povtoryajte-oshibok"
+    }
+  },
+  {
+    "model": "content.publication",
+    "pk": "ea9a3a2c-9a19-4f48-a252-c1484f52e75a",
+    "fields": {
+      "created": "2024-01-07T14:10:50.256Z",
+      "updated": "2024-01-07T14:28:22.662Z",
+      "ordering": 2,
+      "title": "7 причин купить подвесной светильник",
+      "arrow": true,
+      "text": "фывфыв",
+      "block": "1af7ece7-7b23-4594-845d-38ab0236c895",
+      "image": 73,
+      "slug": "7-prichin-kupit-podvesnoj-svetilnik"
+    }
+  },
+  {
+    "model": "projects.category",
+    "pk": "351b70c7-8391-46fd-9e6d-50940a2b9d5d",
+    "fields": {
+      "created": "2024-01-07T09:47:40.566Z",
+      "updated": "2024-01-07T09:47:40.566Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Коммерческие"
+    }
+  },
+  {
+    "model": "projects.category",
+    "pk": "755f0c9a-0ad9-4bd8-bb99-81f5b2569037",
+    "fields": {
+      "created": "2024-01-07T09:47:45.468Z",
+      "updated": "2024-01-07T09:47:45.468Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Жилые"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": "02dcafe8-c1e1-4f63-931c-42b10d0d12cc",
+    "fields": {
+      "created": "2024-01-07T09:50:52.717Z",
+      "updated": "2024-01-07T09:56:39.855Z",
+      "ordering": 0,
+      "active": true,
+      "title": "ЖК Московский 172",
+      "category": "351b70c7-8391-46fd-9e6d-50940a2b9d5d",
+      "slug": "moskovskij-172",
+      "architect": "Наталья Репина",
+      "architect_url": "",
+      "location": "ЖК Московский 172",
+      "installer": "Ledmonster",
+      "installer_url": "",
+      "description": "Компания Ledmonster совместно с дизайнером Натальей Репиной создали проект квартиры в стиле современной классики.\r\n\r\nИзысканные детали, сочетание как традиционных, так и современных элементов придают интерьеру особый стиль, к которому трудно остаться равнодушным.\r\n\r\nДля основного освещения кухни-гостиной и кабинета были выбраны трековые светильники серии Universe, что позволило совместить элегантность, утонченность и функциональность. Также эти модели стали отличным решением для гардеробной зоны. В ванной установили точечные светильники Loft - они дают достаточное количество света, при этом их лаконичный дизайн не перегружает пространство, оставляя основной акцент в центре внимания.\r\n\r\nНакладные модели Spy в зоне спальни не просто выполняют свою основную роль, но и служат стильной деталью интерьера.\r\n\r\nВыбранные модели светильников гармонично вписались в классический интерьер, подчеркнули его особенные детали и добавили актуальности и современности.",
+      "models": [
+        "824c5644-39a2-4c4a-943b-a42fcfa6e09f"
+      ]
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": "24b73925-9fa8-41d4-8123-5778c4f8b444",
+    "fields": {
+      "created": "2024-01-07T09:53:11.519Z",
+      "updated": "2024-01-07T09:55:32.358Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Автосалон BMW",
+      "category": "351b70c7-8391-46fd-9e6d-50940a2b9d5d",
+      "slug": "bmw-car-dealership",
+      "architect": "Ирина Жукова",
+      "architect_url": "",
+      "location": "Автопорт BMW",
+      "installer": "Ledmonster",
+      "installer_url": "",
+      "description": "Лаконичный дизайн, строгие линии и безопасный свет — это то, что нужно для для автосалона BMW Автопорт. Проект был разработан совместно с дизайнером Ириной Жуковой и архитектором Надеждой Ильиш. Главная цель — создание единого визуального образа пространства с помощью света, который будет отлично сочетаться со стилистикой и дизайном торговой марки BMW. \r\n\r\nНа площади около 150 м2, мы использовали более пяти различных моделей светильников, световых профилей и светодиодных лент. Пространство было разделено на несколько зон, из которых у каждой своя задача. \r\n\r\nЗона бара, куда отлично подошли точечные подвесные светильники Jaxon Tony, светодиодная лента, придающая объем барной стойки и световой профиль, подчеркивающий фактуру бетонной стены. Для столовой зоны мы выбрали трековую систему со светильниками Spy Track Pro c с регулировкой светового потока от узкого угла до среднего. И, конечно, лаунж зона, где клиенты салона будут чувствовать себя максимально комфортно, благодаря мягкому, не слепящему глаза освещения. Добиться уютной атмосферы нам удалось с помощью реечной конструкции с линейными накладными светильниками NS3535, которые будто перетекают из одной зоны в другую, придавая объем и легкость пространству. А для основного освещения всех трех зон были использованы светильники Kub in.",
+      "models": [
+        "85398734-501f-443d-81fa-086f915b2421"
+      ]
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": "972266ed-2d04-4f9f-917f-db819e11ea31",
+    "fields": {
+      "created": "2024-01-07T09:54:08.438Z",
+      "updated": "2024-01-07T09:55:08.805Z",
+      "ordering": 0,
+      "active": true,
+      "title": "Резиденции Москва",
+      "category": "351b70c7-8391-46fd-9e6d-50940a2b9d5d",
+      "slug": "residense-moscow",
+      "architect": "Частный архитектор",
+      "architect_url": "",
+      "location": "Москва, ул. Охотный Ряд, д.2",
+      "installer": "Ledmonster",
+      "installer_url": "",
+      "description": "Резиденции находятся в самом центре столицы, в легендарном здании гостиницы «Москва».\r\n\r\nИнфраструктуре комплекса можно только позавидовать: торговая галерея, бизнес-центр, множество известных ресторанов, ВИП-кинотеатр — и все это не выходя на улицу.\r\n\r\nСтоит ли говорить, что в пятиминутной шаговой доступности находятся ГУМ, ЦУМ, ГосДума, Большой и Малый театры, Кремль и парк «Зарядье».\r\n\r\nИнтерьер выполнен в стиле неоклассики: сдержанная роскошь, тёплые бежевые тона, изысканность и утончённость. Используются инновационные технологии, такие как система «Умный дом».",
+      "models": [
+        "85398734-501f-443d-81fa-086f915b2421"
+      ]
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": "9b306f8f-7d2d-4a17-aafc-bd59831b7d23",
+    "fields": {
+      "created": "2024-01-07T09:52:11.002Z",
+      "updated": "2024-01-07T09:56:08.744Z",
+      "ordering": 0,
+      "active": true,
+      "title": "ЖК Capital Towers",
+      "category": "755f0c9a-0ad9-4bd8-bb99-81f5b2569037",
+      "slug": "capital-towers",
+      "architect": "Capital Towers",
+      "architect_url": "",
+      "location": "Краснопресненская наб., 14, с1",
+      "installer": "Ledmonster",
+      "installer_url": "",
+      "description": "Совместно с нашим партнером Capital Group мы создали проект демонстрационной квартиры в современном стиле.\r\n\r\nЭто не просто шоурум или выставочный образец - попадая сюда, вы оказываетесь «дома».\r\n\r\nБлагодаря панорамным окнам квартира кажется более просторной и светлой, сдержанные тона создают комфорт, а оригинальные детали и декор придают особенный шарм интерьеру.\r\n\r\nДля любого дизайн проекта очень важно верно подобрать количество необходимого света, ведь даже самое оригинальное и привлекательное пространство кажется совершенно обычным и плоским при неправильно подобранном освещении.\r\n\r\nКомпания Ledmonster уже много лет сотрудничает с Capital Group и помогает сделать интерьеры, в которых хочется жить.\r\n\r\nВ этот раз мы использовали подвесные светильники, которые не только выполняют роль освещения, но и являются неотъемлемой частью самого дизайна.\r\n\r\nТонкий и изящный Jaxon tony гармонично вписался в зоне спальни и заменил прикроватные бра, а оригинальные Spring P и Extra P стали изюминкой в рабочей и обеденной зоне кухни-гостиной.\r\n\r\nТеплый свет в 3000K наполнил интерьер уютом и сделал атмосферу более домашней.\r\n\r\nС правильным освещением всегда приятно находиться дома. Приходите и убедитесь сами!",
+      "models": [
+        "85398734-501f-443d-81fa-086f915b2421"
+      ]
+    }
+  },
+  {
+    "model": "projects.projectimage",
+    "pk": "1dfa645b-948c-4b87-9caf-f8d0d0c245e4",
+    "fields": {
+      "created": "2024-01-07T09:55:32.364Z",
+      "updated": "2024-01-07T09:55:32.364Z",
+      "ordering": 0,
+      "project": "24b73925-9fa8-41d4-8123-5778c4f8b444",
+      "image": 62,
+      "main": true
+    }
+  },
+  {
+    "model": "projects.projectimage",
+    "pk": "22392ddc-02cf-47ed-bb71-d1cb5c2a20ec",
+    "fields": {
+      "created": "2024-01-07T09:56:08.747Z",
+      "updated": "2024-01-07T09:56:08.747Z",
+      "ordering": 0,
+      "project": "9b306f8f-7d2d-4a17-aafc-bd59831b7d23",
+      "image": 63,
+      "main": true
+    }
+  },
+  {
+    "model": "projects.projectimage",
+    "pk": "3148ab83-988f-4175-b8b4-87061f486229",
+    "fields": {
+      "created": "2024-01-07T09:56:39.859Z",
+      "updated": "2024-01-07T09:56:39.859Z",
+      "ordering": 0,
+      "project": "02dcafe8-c1e1-4f63-931c-42b10d0d12cc",
+      "image": 64,
+      "main": true
+    }
+  },
+  {
+    "model": "projects.projectimage",
+    "pk": "8e2ce4d0-3912-4b49-bfdf-1e7a95e83db5",
+    "fields": {
+      "created": "2024-01-07T09:55:08.809Z",
+      "updated": "2024-01-07T09:55:08.809Z",
+      "ordering": 0,
+      "project": "972266ed-2d04-4f9f-917f-db819e11ea31",
+      "image": 61,
+      "main": true
+    }
+  },
+  {
+    "model": "projects.feedback",
+    "pk": "202e8a3d-0fbe-411d-a162-e7c4aaba2cfc",
+    "fields": {
+      "created": "2024-01-07T11:10:34.587Z",
+      "updated": "2024-01-07T11:10:34.587Z",
+      "ordering": 0,
+      "name": "Борис Ли",
+      "text": "Команда Ledmonster c легкостью разработали такой сложный индивидуальный проект с габаритными моделями светильников. Сами все изготовили и протестировали, нам оставалось лишь расписаться.",
+      "avatar": 68,
+      "project": "972266ed-2d04-4f9f-917f-db819e11ea31"
+    }
+  },
+  {
+    "model": "projects.feedback",
+    "pk": "8afbe790-2d48-448c-93f4-f1bfd9571e9f",
+    "fields": {
+      "created": "2024-01-07T11:10:02.989Z",
+      "updated": "2024-01-07T11:10:02.989Z",
+      "ordering": 0,
+      "name": "Ирина Костерина и Надежда Ильиш",
+      "text": "Мы неоднократно сотрудничали с компанией Ledmonster и все наши задумки легко реализовывались с помощью большого ассортимента. Желаем вашей команде побольше классных проектов!",
+      "avatar": 67,
+      "project": "24b73925-9fa8-41d4-8123-5778c4f8b444"
+    }
+  },
+  {
+    "model": "projects.feedback",
+    "pk": "b1d1b7dc-25f6-42e3-967a-d98299398464",
+    "fields": {
+      "created": "2024-01-07T11:09:10.645Z",
+      "updated": "2024-01-07T11:09:10.645Z",
+      "ordering": 0,
+      "name": "Spacetime Studio",
+      "text": "Всем дизайнерам и архитекторам, которые планируют сотрудничество с Ledmonster, мы бы хотели посоветовать расслабиться! Потому что с освещением у вас точно не будет проблем, а если и возникнут, то молниеносно решатся!",
+      "avatar": 66,
+      "project": "9b306f8f-7d2d-4a17-aafc-bd59831b7d23"
+    }
+  },
+  {
+    "model": "projects.feedback",
+    "pk": "cc29a543-1521-4582-bc4d-70c69e995586",
+    "fields": {
+      "created": "2024-01-07T11:08:13.045Z",
+      "updated": "2024-01-07T11:08:13.045Z",
+      "ordering": 0,
+      "name": "Сэм Райсберг",
+      "text": "Я уже много лет сотрудничаю с Ledmonster, и все интерьеры, где было использовано освещение этой компании, получались живыми, давая крутую, сочную картинку. А деньги, вложенные в проект, всегда того стоили!",
+      "avatar": 65,
+      "project": "02dcafe8-c1e1-4f63-931c-42b10d0d12cc"
+    }
+  }
+]

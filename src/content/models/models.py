@@ -4,7 +4,7 @@ from filer.fields.image import FilerImageField
 from admintools.models import CoreModel
 from catalog.models import Model
 from content.models.managers import ProjectCardQuerySet
-from projects.models import Project, Feedback
+from projects.models import Feedback, Project
 
 
 class Page(CoreModel):
@@ -45,6 +45,7 @@ class Banner(CoreModel):
         SIMPLE = 'SIMPLE', 'Simple banner'
         HERO = 'HERO', 'Hero banner'
         TAB = 'TAB', 'Tab banner (4 images)'
+        CONSULTANT = 'CONSULTANT', 'Consultant banner'
 
     block = models.ForeignKey(ContentBlock, related_name='banners', on_delete=models.CASCADE)
     pre_title = models.CharField(max_length=256, blank=True)

@@ -6,9 +6,9 @@ from content.models import (
     Banner,
     Button,
     ContentBlock,
+    FeedbackCard,
     ModelCard,
     ProjectCard,
-    FeedbackCard,
     Publication,
 )
 
@@ -82,7 +82,7 @@ class FeedbackCardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = FeedbackCard
-        fields = ['id', 'slug', 'type', 'title', 'subtitle','text', 'image']
+        fields = ['id', 'slug', 'type', 'title', 'subtitle', 'text', 'image']
 
 
 class PublicationSerializer(serializers.ModelSerializer):
@@ -94,7 +94,7 @@ class PublicationSerializer(serializers.ModelSerializer):
 
 
 class ContentBlockSerializer(serializers.ModelSerializer):
-    banners = BannerSerializer(many=True)
+    banners = serializers.SerializerMethodField()
     cards = serializers.SerializerMethodField()
 
     class Meta:
@@ -109,6 +109,11 @@ class ContentBlockSerializer(serializers.ModelSerializer):
             'banners',
             'type',
         ]
+
+    def get_banners(self, instance):
+        if instance.consultant:
+            return BannerSerializer(instance=[instance.consultant[0]], many=True).data
+        return BannerSerializer(instance=instance.banners, many=True).data
 
     def get_cards(self, instance):
         if instance.modelcards.exists():
