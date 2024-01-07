@@ -1,7 +1,8 @@
+from django.conf import settings
 from rest_framework import serializers
 
 from admintools.api.serializers import ImageSerializer
-from content.models import Banner, Button, ContentBlock, ModelCard
+from content.models import Banner, Button, ContentBlock, ModelCard, ProjectCard
 
 
 class ButtonSerializer(serializers.ModelSerializer):
@@ -42,6 +43,24 @@ class ModelCardSerializer(serializers.ModelSerializer):
         fields = ['id', 'slug', 'type', 'title', 'text', 'image']
 
 
+class ProjectCardSerializer(serializers.ModelSerializer):
+    image = serializers.SerializerMethodField()
+    slug = serializers.CharField(source='project.slug')
+
+    class Meta:
+        model = ProjectCard
+        fields = ['id', 'slug', 'type', 'title', 'text', 'image']
+
+    def get_image(self, instance):
+        return {
+            'id': instance.main_image_id,
+            'width': instance.main_image_width,
+            'height': instance.main_image_height,
+            'optimized': instance.main_image_optimized,
+            'absolute_url': f'{settings.HOST_DOMAIN}/media/{instance.main_image_path}',
+        }
+
+
 class ContentBlockSerializer(serializers.ModelSerializer):
     banners = BannerSerializer(many=True)
     cards = serializers.SerializerMethodField()
@@ -60,6 +79,8 @@ class ContentBlockSerializer(serializers.ModelSerializer):
         ]
 
     def get_cards(self, instance):
-        if instance.model_cards.exists():
-            return ModelCardSerializer(instance=instance.model_cards, many=True).data
+        if instance.modelcards.exists():
+            return ModelCardSerializer(instance=instance.modelcards, many=True).data
+        if instance.projectcards.exists():
+            return ProjectCardSerializer(instance=instance.projectcards, many=True).data
         return []

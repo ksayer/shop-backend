@@ -23,7 +23,6 @@ class Project(ActiveCoreModel):
     installer = d_models.CharField(max_length=128)
     installer_url = d_models.URLField(max_length=255, blank=True)
     description = d_models.TextField(blank=True)
-    is_on_main_page = d_models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
