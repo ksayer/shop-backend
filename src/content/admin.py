@@ -11,6 +11,7 @@ from content.models import (
     Page,
     ProjectCard,
     Publication,
+    Tab,
 )
 
 
@@ -20,11 +21,17 @@ class ButtonInline(NestedStackedInline):
     fk_name = 'banner'
 
 
+class TabInline(NestedStackedInline):
+    model = Tab
+    extra = 0
+    fk_name = 'banner'
+
+
 class BannerInline(NestedStackedInline):
     model = Banner
     autocomplete_fields = ['image']
     extra = 0
-    inlines = (ButtonInline,)
+    inlines = (ButtonInline, TabInline)
     fk_name = 'block'
 
 
@@ -41,7 +48,7 @@ class BannerAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'block', 'ordering')
     list_editable = ['ordering']
     list_filter = (('block', RelatedDropdownFilter),)
-    inlines = (ButtonInline,)
+    inlines = (ButtonInline, TabInline)
 
 
 @admin.register(ContentBlock)

@@ -70,20 +70,33 @@ class Banner(CoreModel):
         return f'{self.block} - {self.title}'
 
 
+class Tab(CoreModel):
+    banner = models.ForeignKey(Banner, related_name='tabs', on_delete=models.CASCADE)
+    title = models.CharField(max_length=128)
+    description = models.TextField()
+    image = FilerImageField(
+        on_delete=models.CASCADE,
+        related_name='tabs',
+    )
+
+    def __str__(self):
+        return self.title
+
+
 class Button(CoreModel):
-    text = models.CharField(max_length=64)
+    title = models.CharField(max_length=64)
     link = models.CharField(max_length=128, blank=True)
     banner = models.ForeignKey(Banner, related_name='buttons', on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.text
+        return self.title
 
 
 class CardBase(CoreModel):
     block = models.ForeignKey(ContentBlock, related_name='%(class)ss', on_delete=models.CASCADE)
     title = models.CharField(max_length=128)
     arrow = models.BooleanField(default=False)
-    text = models.TextField()
+    description = models.TextField()
 
     class Meta(CoreModel.Meta):
         abstract = True

@@ -8,13 +8,19 @@ from content.models import (
     FeedbackCard,
     ModelCard,
     ProjectCard,
-    Publication,
+    Publication, Tab,
 )
 
 
 class ContentBlockListAPIView(generics.ListAPIView):
     queryset = ContentBlock.objects.prefetch_related(
-        Prefetch('banners', Banner.objects.select_related('image').prefetch_related('buttons')),
+        Prefetch(
+            'banners',
+            Banner.objects.select_related('image').prefetch_related(
+                'buttons',
+                Prefetch('tabs', Tab.objects.select_related('image'))
+            )
+        ),
         Prefetch('modelcards', ModelCard.objects.select_related('model__image')),
         Prefetch(
             'feedbackcards',

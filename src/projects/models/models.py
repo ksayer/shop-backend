@@ -48,7 +48,7 @@ class ProjectImage(CoreModel):
 
 class Feedback(CoreModel):
     name = d_models.CharField(max_length=64)
-    text = d_models.TextField()
+    description = d_models.TextField()
     avatar = FilerImageField(
         on_delete=d_models.CASCADE,
         related_name='avatars',

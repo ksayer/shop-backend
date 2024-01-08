@@ -9,7 +9,7 @@ from content.models import (
     FeedbackCard,
     ModelCard,
     ProjectCard,
-    Publication,
+    Publication, Tab,
 )
 
 
@@ -18,13 +18,26 @@ class ButtonSerializer(serializers.ModelSerializer):
         model = Button
         fields = [
             'id',
-            'text',
+            'title',
             'link',
+        ]
+
+
+class TabSerializer(serializers.ModelSerializer):
+    image = ImageSerializer()
+    class Meta:
+        model = Tab
+        fields = [
+            'id',
+            'title',
+            'description',
+            'image',
         ]
 
 
 class BannerSerializer(serializers.ModelSerializer):
     buttons = ButtonSerializer(many=True)
+    tabs = TabSerializer(many=True)
     image = ImageSerializer()
 
     class Meta:
@@ -37,6 +50,7 @@ class BannerSerializer(serializers.ModelSerializer):
             'description',
             'image_position',
             'buttons',
+            'tabs',
             'mobile_image',
             'phone',
             'address',
@@ -52,7 +66,7 @@ class ModelCardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ModelCard
-        fields = ['id', 'slug', 'arrow', 'type', 'title', 'text', 'image']
+        fields = ['id', 'slug', 'arrow', 'type', 'title', 'description', 'image']
 
 
 class ProjectCardSerializer(serializers.ModelSerializer):
@@ -61,7 +75,7 @@ class ProjectCardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ProjectCard
-        fields = ['id', 'slug', 'arrow', 'type', 'title', 'text', 'image']
+        fields = ['id', 'slug', 'arrow', 'type', 'title', 'description', 'image']
 
     def get_image(self, instance):
         return {
@@ -78,11 +92,11 @@ class FeedbackCardSerializer(serializers.ModelSerializer):
     slug = serializers.CharField(source='feedback.project.slug')
     title = serializers.CharField(source='feedback.name')
     subtitle = serializers.CharField(source='feedback.project.title')
-    text = serializers.CharField(source='feedback.text')
+    description = serializers.CharField(source='feedback.description')
 
     class Meta:
         model = FeedbackCard
-        fields = ['id', 'slug', 'type', 'title', 'subtitle', 'text', 'image']
+        fields = ['id', 'slug', 'type', 'title', 'subtitle', 'description', 'image']
 
 
 class PublicationSerializer(serializers.ModelSerializer):
