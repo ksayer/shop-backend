@@ -23,7 +23,7 @@ class ContentBlock(CoreModel):
         BANNERS = 'BANNERS', 'Simple banners (inside the container)'
         WIDE_BANNERS = 'WIDE_BANNERS', 'Wide banners (the full width of the screen)'
 
-    page = models.ForeignKey(Page, related_name='blocks', on_delete=models.CASCADE)
+    page = models.ForeignKey(Page, related_name='contentblocks', on_delete=models.CASCADE)
     inner_title = models.CharField(max_length=128)
     title = models.CharField(max_length=128, blank=True)
     link = models.CharField(max_length=128, blank=True)

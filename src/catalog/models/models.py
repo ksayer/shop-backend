@@ -3,6 +3,7 @@ from filer.fields.file import FilerFileField
 from filer.fields.image import FilerImageField
 
 from admintools.models import ActiveCoreModel, CoreModel
+from catalog.models.managers import ModelQuerySet, PropertyQuerySet
 
 
 class Group(ActiveCoreModel):
@@ -17,10 +18,12 @@ class Category(ActiveCoreModel):
     group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='groups')
 
     def __str__(self):
-        return self.title
+        return f'{self.title} ({self.group})'
 
 
 class Model(ActiveCoreModel):
+    objects = ModelQuerySet.as_manager()
+
     title = models.CharField(max_length=64)
     slug = models.SlugField(unique=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='models')
@@ -36,8 +39,8 @@ class Model(ActiveCoreModel):
 
 class Product(ActiveCoreModel):
     title = models.CharField('Product title (without model)', max_length=64, blank=True)
-    slug = models.SlugField(unique=True)
-    model = models.ForeignKey(Model, on_delete=models.CASCADE)
+    slug = models.SlugField(unique=False)
+    model = models.ForeignKey(Model, related_name='products', on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=0)
     discounted_price = models.DecimalField(
         max_digits=10,
@@ -63,6 +66,9 @@ class Product(ActiveCoreModel):
         related_name='products_with_schema',
     )
     modification = models.ForeignKey('Modification', on_delete=models.CASCADE)
+
+    class Meta(ActiveCoreModel.Meta):
+        unique_together = ('model', 'slug')
 
     def __str__(self):
         return f'{self.id}: {self.title}'
@@ -111,18 +117,20 @@ class ProductProperty(CoreModel):
 
 
 class Property(CoreModel):
+    objects = PropertyQuerySet.as_manager()
+
     class Title(models.TextChoices):
-        POWER = 'power'
-        BEAM = 'beam'
-        COLOR_INDEX = 'color_index'
-        COLOR_TEMPERATURE = 'color_temperature'
-        BODY_COLOR = 'body_color'
-        FRAME_COLOR = 'frame_color'
-        COVER_COLOR = 'cover_color'
-        DIMMING = 'dimming'
-        BEAM_ANGLE = 'beam_angle'
-        PROTECTION = 'protection'
-        SIZE = 'size'
+        POWER = 'power', 'Мощность'
+        BEAM = 'beam', 'Световой поток'
+        COLOR_INDEX = 'color_index', 'Индекс цветопередачи'
+        COLOR_TEMPERATURE = 'color_temperature', 'Цветовая температура'
+        BODY_COLOR = 'body_color', 'Цвет корпуса'
+        FRAME_COLOR = 'frame_color', 'Цвет рамки'
+        COVER_COLOR = 'cover_color', 'Цвет накладки'
+        DIMMING = 'dimming', 'Управление яркостью'
+        BEAM_ANGLE = 'beam_angle', 'Угол рассеивания'
+        PROTECTION = 'protection', 'Влагозащита'
+        SIZE = 'size', 'Размер'
 
     title = models.CharField(max_length=32, choices=Title.choices)
     value = models.CharField(max_length=32)

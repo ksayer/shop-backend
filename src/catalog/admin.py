@@ -61,8 +61,8 @@ class ModificationAdmin(admin.ModelAdmin):
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     autocomplete_fields = ['image', 'modification', 'model']
-    list_display = ['slug', 'title', 'active', 'price', 'body_color', 'ordering']
-    list_editable = ['price', 'active', 'ordering']
+    list_display = ['slug', 'title', 'active', 'price', 'discounted_price','body_color', 'ordering']
+    list_editable = ['price', 'discounted_price', 'active', 'ordering']
     inlines = [ProductPropertyInline, ProductFileInline]
     search_fields = ['slug', 'title']
     search_help_text = 'searching by slug, title'
@@ -90,5 +90,9 @@ class PropertyAdmin(admin.ModelAdmin):
     list_display = ['title', 'value', 'color_code', 'group']
     list_editable = ['group']
     list_filter = [('group', RelatedDropdownFilter), ('title', DropdownFilter)]
-    search_fields = ['title', 'value']
+    search_fields = ['display_title', 'value']
     search_help_text = 'searching by title, value'
+
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return qs.with_display_title()
