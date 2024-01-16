@@ -19,6 +19,7 @@ celery = "^5.3.6"
 redis = "^5.0.1"
 django-nested-inline = "^0.4.6"
 django-admin-list-filter-dropdown = "^1.0.3"
+django-cors-headers = "^4.3.1"
 
 
 [tool.poetry.group.dev.dependencies]

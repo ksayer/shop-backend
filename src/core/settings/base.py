@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     # third
+    "corsheaders",
     'easy_thumbnails',
     'django_filters',
     'django_admin_listfilter_dropdown',
@@ -40,6 +41,8 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -97,3 +100,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 FILER_IMAGE_MODEL = 'admintools.FilerImage'
 
 HOST_DOMAIN = 'http://localhost:8000'
+
+CORS_ALLOW_ALL_ORIGINS = True

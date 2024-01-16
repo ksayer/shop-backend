@@ -1,6 +1,6 @@
-from django.conf import settings
 from rest_framework import serializers
 
+from admintools.utils import remove_duplicated_values
 from catalog.models import Model
 
 
@@ -13,6 +13,7 @@ class ModelListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Model
         fields = [
+            'id',
             'title',
             'slug',
             'min_price',
@@ -22,11 +23,5 @@ class ModelListSerializer(serializers.ModelSerializer):
         ]
 
     def get_images(self, instance):
-        return [
-            {
-                'color': color,
-                'image': f'{settings.HOST_DOMAIN}/media/{instance.images[i]}'
-            }
-            for i, color in enumerate(instance.colors)
-        ]
-
+        """Remove color duplicates"""
+        return remove_duplicated_values(instance.images, 'color')
