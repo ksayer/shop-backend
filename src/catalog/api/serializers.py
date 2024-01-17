@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from admintools.utils import remove_duplicated_values
-from catalog.models import Model
+from catalog.models import Model, Group, Category
 
 
 class ModelListSerializer(serializers.ModelSerializer):
@@ -25,3 +25,17 @@ class ModelListSerializer(serializers.ModelSerializer):
     def get_images(self, instance):
         """Remove color duplicates"""
         return remove_duplicated_values(instance.images, 'color')
+
+
+class CategoryListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ['id', 'title', 'slug']
+
+
+class GroupListSerializer(serializers.ModelSerializer):
+    categories = CategoryListSerializer(many=True)
+
+    class Meta:
+        model = Group
+        fields = ['id', 'title', 'slug', 'categories']

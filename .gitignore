@@ -143,3 +143,4 @@ pyrightconfig.json
 .pyrightconfig.json
 .venv/
 .vscode/
+_scripts/

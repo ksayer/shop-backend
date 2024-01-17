@@ -8,6 +8,7 @@ from catalog.models.managers import ModelQuerySet, PropertyQuerySet
 
 class Group(ActiveCoreModel):
     title = models.CharField(max_length=64)
+    slug = models.SlugField(unique=True)
 
     def __str__(self):
         return self.title
@@ -15,7 +16,8 @@ class Group(ActiveCoreModel):
 
 class Category(ActiveCoreModel):
     title = models.CharField(max_length=64)
-    group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='groups')
+    slug = models.SlugField(unique=True)
+    group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='categories')
 
     def __str__(self):
         return f'{self.title} ({self.group})'
