@@ -7,10 +7,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path(
         'api/',
-        include([
-            path('content/', include('content.api.urls')),
-            path('catalog/', include('catalog.api.urls')),
-        ])
+        include(
+            [
+                path('content/', include('content.api.urls')),
+                path('catalog/', include('catalog.api.urls')),
+            ]
+        ),
     ),
 ]
 

@@ -8,7 +8,8 @@ from content.models import (
     FeedbackCard,
     ModelCard,
     ProjectCard,
-    Publication, Tab,
+    Publication,
+    Tab,
 )
 
 
@@ -17,9 +18,8 @@ class ContentBlockListAPIView(generics.ListAPIView):
         Prefetch(
             'banners',
             Banner.objects.select_related('image').prefetch_related(
-                'buttons',
-                Prefetch('tabs', Tab.objects.select_related('image'))
-            )
+                'buttons', Prefetch('tabs', Tab.objects.select_related('image'))
+            ),
         ),
         Prefetch('modelcards', ModelCard.objects.select_related('model__image')),
         Prefetch(

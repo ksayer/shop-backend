@@ -1,7 +1,7 @@
 from rest_framework import generics
 
-from catalog.api.serializers import ModelListSerializer, GroupListSerializer
-from catalog.models import Model, Group
+from catalog.api.serializers import GroupListSerializer, ModelListSerializer
+from catalog.models import Group, Model
 
 
 class ModelListApiView(generics.ListAPIView):
@@ -10,5 +10,6 @@ class ModelListApiView(generics.ListAPIView):
 
 
 class GroupListAPIView(generics.ListAPIView):
-    queryset = Group.objects.prefetch_related('categories')
+    queryset = Group.objects.annotate_filters().prefetch_related('categories').order_by('ordering')
     serializer_class = GroupListSerializer
+    filterset_fields = ['active']

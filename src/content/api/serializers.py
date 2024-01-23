@@ -9,7 +9,8 @@ from content.models import (
     FeedbackCard,
     ModelCard,
     ProjectCard,
-    Publication, Tab,
+    Publication,
+    Tab,
 )
 
 
@@ -25,6 +26,7 @@ class ButtonSerializer(serializers.ModelSerializer):
 
 class TabSerializer(serializers.ModelSerializer):
     image = ImageSerializer()
+
     class Meta:
         model = Tab
         fields = [

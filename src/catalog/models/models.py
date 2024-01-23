@@ -3,12 +3,13 @@ from filer.fields.file import FilerFileField
 from filer.fields.image import FilerImageField
 
 from admintools.models import ActiveCoreModel, CoreModel
-from catalog.models.managers import ModelQuerySet, PropertyQuerySet
+from catalog.models.managers import GroupQuerySet, ModelQuerySet, PropertyQuerySet
 
 
 class Group(ActiveCoreModel):
     title = models.CharField(max_length=64)
     slug = models.SlugField(unique=True)
+    objects = GroupQuerySet.as_manager()
 
     def __str__(self):
         return self.title

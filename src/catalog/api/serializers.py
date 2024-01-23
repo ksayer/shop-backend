@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from admintools.utils import remove_duplicated_values
-from catalog.models import Model, Group, Category
+from catalog.models import Category, Group, Model
 
 
 class ModelListSerializer(serializers.ModelSerializer):
@@ -35,7 +35,8 @@ class CategoryListSerializer(serializers.ModelSerializer):
 
 class GroupListSerializer(serializers.ModelSerializer):
     categories = CategoryListSerializer(many=True)
+    filters = serializers.JSONField()
 
     class Meta:
         model = Group
-        fields = ['id', 'title', 'slug', 'categories']
+        fields = ['id', 'title', 'slug', 'filters', 'categories']

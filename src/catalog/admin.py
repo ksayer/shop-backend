@@ -61,7 +61,17 @@ class ModificationAdmin(admin.ModelAdmin):
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     autocomplete_fields = ['image', 'modification', 'model']
-    list_display = ['id', 'slug', 'title', 'model', 'active', 'price', 'discounted_price','body_color', 'ordering']
+    list_display = [
+        'id',
+        'slug',
+        'title',
+        'model',
+        'active',
+        'price',
+        'discounted_price',
+        'body_color',
+        'ordering',
+    ]
     list_editable = ['price', 'discounted_price', 'active', 'ordering']
     inlines = [ProductPropertyInline, ProductFileInline]
     search_fields = ['slug', 'title', 'model__title']
