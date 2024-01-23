@@ -13,12 +13,13 @@ class GroupQuerySet(QuerySet):
             for title, label in Property.Title.choices
         ]
         return self.annotate(
-            filters=JSONBAgg(JSONObject(
-                property=F('categories__models__products__properties__group__title'),
-                slug=F('categories__models__products__properties__title'),
-                title=Case(*property_title_conditions),
-                id=F('categories__models__products__properties__group__id'),
-            ),
+            filters=JSONBAgg(
+                JSONObject(
+                    property=F('categories__models__products__properties__group__title'),
+                    slug=F('categories__models__products__properties__title'),
+                    title=Case(*property_title_conditions),
+                    id=F('categories__models__products__properties__group__id'),
+                ),
                 filter=~Q(categories__models__products__properties__group__title=None),
                 distinct=True,
             )
