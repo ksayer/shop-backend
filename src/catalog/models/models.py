@@ -31,10 +31,6 @@ class Model(ActiveCoreModel):
     slug = models.SlugField(unique=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='models')
     description = models.TextField(blank=True)
-    image = FilerImageField(
-        on_delete=models.CASCADE,
-        related_name='models',
-    )
 
     def __str__(self):
         return self.title
@@ -62,7 +58,7 @@ class Product(ActiveCoreModel):
         on_delete=models.CASCADE,
         related_name='products',
     )
-    schema = FilerFileField(
+    scheme = FilerFileField(
         blank=True,
         null=True,
         on_delete=models.SET_NULL,

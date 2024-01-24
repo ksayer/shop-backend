@@ -1,7 +1,6 @@
 from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import (
-    DropdownFilter,
-    RelatedDropdownFilter,
+    RelatedDropdownFilter, ChoiceDropdownFilter,
 )
 
 from catalog.filters import dropdown_filter_with_custom_title
@@ -47,7 +46,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Model)
 class ModelAdmin(admin.ModelAdmin):
-    autocomplete_fields = ['category', 'image']
+    autocomplete_fields = ['category']
     list_display = ['title', 'active', 'slug', 'ordering']
     list_editable = ['ordering', 'active']
     search_fields = ['title']
@@ -99,7 +98,7 @@ class PropertyAdmin(admin.ModelAdmin):
     form = PropertyForm
     list_display = ['title', 'value', 'color_code', 'group']
     list_editable = ['group']
-    list_filter = [('group', RelatedDropdownFilter), ('title', DropdownFilter)]
+    list_filter = [('group', RelatedDropdownFilter), ('title', ChoiceDropdownFilter)]
     search_fields = ['display_title', 'value']
     search_help_text = 'searching by title, value'
 
