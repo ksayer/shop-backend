@@ -6,8 +6,7 @@ from django.db.models.functions import Coalesce, Concat, JSONObject
 
 class GroupQuerySet(QuerySet):
     def annotate_filters(self):
-        from catalog.models import Property
-
+        return self
         property_title_conditions = [
             When(categories__models__products__properties__title=title, then=Value(label))
             for title, label in Property.Title.choices
@@ -29,7 +28,7 @@ class GroupQuerySet(QuerySet):
 class ModelQuerySet(QuerySet):
     def for_catalog(self):
         from catalog.models import Product
-
+        return self
         color_temperature_subquery = (
             Product.objects.filter(model=OuterRef('id'), properties__title='color_temperature')
             .values('model')

@@ -1,10 +1,4 @@
 from django.contrib import admin
-from django_admin_listfilter_dropdown.filters import (
-    RelatedDropdownFilter, ChoiceDropdownFilter,
-)
-
-from catalog.filters import dropdown_filter_with_custom_title
-from catalog.forms import ProductPropertyInlineFormset, PropertyForm
 from catalog.models import (
     Category,
     Group,
@@ -12,16 +6,19 @@ from catalog.models import (
     Modification,
     Product,
     ProductFile,
-    ProductProperty,
     Property,
-    PropertyGroup,
+    Power,
+    Beam,
+    ColorIndex,
+    ColorTemperature,
+    BodyColor,
+    FrameColor,
+    CoverColor,
+    Dimming,
+    BeamAngle,
+    Protection,
+    Size,
 )
-
-
-class ProductPropertyInline(admin.TabularInline):
-    autocomplete_fields = ['property']
-    formset = ProductPropertyInlineFormset
-    model = ProductProperty
 
 
 class ProductFileInline(admin.TabularInline):
@@ -57,51 +54,77 @@ class ModificationAdmin(admin.ModelAdmin):
     search_fields = ['title']
 
 
+class PropertyInline(admin.StackedInline):
+    autocomplete_fields = [
+        'power',
+        'size',
+        'beam',
+        'beam_angle',
+        'color_index',
+        'color_temperature',
+        'body_color',
+        'frame_color',
+        'cover_color',
+        'dimming',
+        'protection',
+    ]
+    model = Property
+    fieldsets = [
+        ('', {
+            'fields': [
+                ('body_color', 'color_temperature',),
+                ('power', 'beam'),
+                ('beam_angle', 'color_index'),
+                ('frame_color', 'cover_color'), ('dimming', 'protection'),
+                ('size',),
+            ],
+        }),
+    ]
+    can_delete = False
+    template = 'admintools/stacked_inline_o2o.html'
+
+
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    autocomplete_fields = ['image', 'modification', 'model']
+    inlines = (PropertyInline, )
+    autocomplete_fields = ['image', 'modification']
     list_display = [
         'id',
+        'modification',
         'slug',
-        'title',
-        'model',
         'active',
         'price',
         'discounted_price',
-        'body_color',
         'ordering',
     ]
     list_editable = ['price', 'discounted_price', 'active', 'ordering']
-    inlines = [ProductPropertyInline, ProductFileInline]
+    # inlines = [ProductFileInline]
     search_fields = ['slug', 'title', 'model__title']
     search_help_text = 'searching by slug, title'
 
-    def body_color(self, instance):
-        return instance.get_body_color()
 
-
-@admin.register(PropertyGroup)
-class PropertyGroupAdmin(admin.ModelAdmin):
-    list_display = ['title', 'property', 'ordering']
-    list_editable = ['ordering']
-    list_filter = [('properties__title', dropdown_filter_with_custom_title('property'))]
-    search_fields = ['title']
-
-    def property(self, obj):
-        return obj.property_title
-
-
-@admin.register(Property)
 class PropertyAdmin(admin.ModelAdmin):
-    autocomplete_fields = ['group']
-    exclude = ['ordering']
-    form = PropertyForm
-    list_display = ['title', 'value', 'color_code', 'group']
-    list_editable = ['group']
-    list_filter = [('group', RelatedDropdownFilter), ('title', ChoiceDropdownFilter)]
-    search_fields = ['display_title', 'value']
-    search_help_text = 'searching by title, value'
+    search_fields = ['title', 'group']
 
-    def get_queryset(self, request):
-        qs = super().get_queryset(request)
-        return qs.with_display_title()
+
+properties = [
+    Power,
+    Beam,
+    ColorIndex,
+    ColorTemperature,
+    BodyColor,
+    FrameColor,
+    CoverColor,
+    Dimming,
+    BeamAngle,
+    Protection,
+    Size,
+]
+
+
+def register_properties(models):
+    for model in models:
+        admin.register(model)(PropertyAdmin)
+
+
+register_properties(properties)
