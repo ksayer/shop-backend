@@ -1,66 +1,69 @@
 from django.conf import settings
-from django.contrib.postgres.aggregates import ArrayAgg, JSONBAgg
-from django.db.models import Case, F, Min, OuterRef, Q, QuerySet, Subquery, Value, When
-from django.db.models.functions import Coalesce, Concat, JSONObject
+from django.contrib.postgres.aggregates import JSONBAgg
+from django.db.models import Case, F, Min, Q, QuerySet, Value, When
+from django.db.models.functions import Concat, JSONObject
+
+
+def get_filter_aggregations(prefix: str = '') -> dict[str, JSONObject]:
+    """
+    Prepare aggregation JSONObjects for annotate filters
+    """
+    aggregations = {}
+    properties = ['power', 'color_temperature', 'beam_angle', 'beam', 'dimming', 'protection']
+    for prop in properties:
+        property_id = f"{prefix}models__modifications__products__property__{prop}__id"
+        property_group = f"{prefix}models__modifications__products__property__{prop}__group__title"
+        property_title = f"{prefix}models__modifications__products__property__{prop}__title"
+
+        aggregations[prop] = JSONBAgg(
+            JSONObject(
+                id=property_id,
+                group_title=property_group
+            ),
+            distinct=True,
+            filter=~Q(**{property_title: None})
+        )
+    return aggregations
 
 
 class GroupQuerySet(QuerySet):
+    filters_agg = get_filter_aggregations('categories__')
+
     def annotate_filters(self):
-        return self
-        property_title_conditions = [
-            When(categories__models__products__properties__title=title, then=Value(label))
-            for title, label in Property.Title.choices
-        ]
-        return self.annotate(
-            filters=JSONBAgg(
-                JSONObject(
-                    property=F('categories__models__products__properties__group__title'),
-                    slug=F('categories__models__products__properties__title'),
-                    title=Case(*property_title_conditions),
-                    id=F('categories__models__products__properties__group__id'),
-                ),
-                filter=~Q(categories__models__products__properties__group__title=None),
-                distinct=True,
-            )
-        )
+        return self.annotate(filters=JSONObject(**self.filters_agg))
+
+
+class CategoryQuerySet(QuerySet):
+    filters_agg = get_filter_aggregations()
+
+    def annotate_filters(self):
+        return self.annotate(filters=JSONObject(**self.filters_agg))
 
 
 class ModelQuerySet(QuerySet):
     def for_catalog(self):
-        from catalog.models import Product
-        return self
-        color_temperature_subquery = (
-            Product.objects.filter(model=OuterRef('id'), properties__title='color_temperature')
-            .values('model')
-            .annotate(list_color_temperature=ArrayAgg('properties__value'))
-            .values('list_color_temperature')[:1]
-        )
-
-        return self.filter(products__properties__title='body_color').annotate(
-            min_price=Min('products__price'),
-            min_discounted_price=Min('products__discounted_price'),
-            color_temperatures=Coalesce(Subquery(color_temperature_subquery), Value([])),
+        return self.annotate(
+            min_price=Min('modifications__products__price'),
+            min_discounted_price=Min('modifications__products__discounted_price'),
+            _color_temperatures=JSONBAgg(
+                'modifications__products__property__color_temperature__title',
+                distinct=True,
+            ),
+            color_temperatures=Case(
+                When(_color_temperatures=[None], then=Value([])),
+                default='_color_temperatures'
+            ),
             images=JSONBAgg(
                 JSONObject(
-                    id=F('products__id'),
-                    ordering=F('products__ordering'),
+                    id=F('modifications__products__id'),
+                    ordering=F('modifications__products__ordering'),
                     file=Concat(
-                        Value(f'{settings.HOST_DOMAIN}/media/'), F('products__image__file')
+                        Value(f'{settings.HOST_DOMAIN}/media/'), F('modifications__products__image__file')
                     ),
-                    width=F('products__image___width'),
-                    height=F('products__image___height'),
-                    color=F('products__properties__color_code'),
+                    width=F('modifications__products__image___width'),
+                    height=F('modifications__products__image___height'),
+                    color=F('modifications__products__property__body_color__color'),
                 ),
-                ordering='products__ordering',
+                ordering='modifications__products__ordering',
             ),
-        )
-
-
-class PropertyQuerySet(QuerySet):
-    def with_display_title(self):
-        return self.annotate(
-            display_title=Case(
-                *[When(title=p[0], then=Value(p[1])) for p in self.model.Title.choices],
-                default=Value(''),
-            )
         )

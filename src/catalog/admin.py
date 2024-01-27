@@ -86,7 +86,7 @@ class PropertyInline(admin.StackedInline):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    inlines = (PropertyInline, )
+    inlines = (PropertyInline, ProductFileInline)
     autocomplete_fields = ['image', 'modification']
     list_display = [
         'id',
@@ -98,8 +98,7 @@ class ProductAdmin(admin.ModelAdmin):
         'ordering',
     ]
     list_editable = ['price', 'discounted_price', 'active', 'ordering']
-    # inlines = [ProductFileInline]
-    search_fields = ['slug', 'title', 'model__title']
+    search_fields = ['slug', 'title', 'modification__title', 'modification__model__title']
     search_help_text = 'searching by slug, title'
 
 

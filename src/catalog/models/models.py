@@ -3,7 +3,7 @@ from filer.fields.file import FilerFileField
 from filer.fields.image import FilerImageField
 
 from admintools.models import ActiveCoreModel, CoreModel
-from catalog.models.managers import GroupQuerySet, ModelQuerySet
+from catalog.models.managers import GroupQuerySet, ModelQuerySet, CategoryQuerySet
 
 
 class Group(ActiveCoreModel):
@@ -16,6 +16,7 @@ class Group(ActiveCoreModel):
 
 
 class Category(ActiveCoreModel):
+    objects = CategoryQuerySet.as_manager()
     title = models.CharField(max_length=64)
     slug = models.SlugField(unique=True)
     group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='categories')
@@ -53,7 +54,7 @@ class Product(ActiveCoreModel):
     slug = models.SlugField()
     modification = models.ForeignKey(
         'Modification',
-        related_name='modifications',
+        related_name='products',
         on_delete=models.CASCADE
     )
     price = models.DecimalField(max_digits=10, decimal_places=0)
@@ -181,70 +182,70 @@ class Property(CoreModel):
     )
     size = models.ForeignKey(
         'Size',
-        related_name='products',
+        related_name='properties',
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
     )
     beam = models.ForeignKey(
         'Beam',
-        related_name='products',
+        related_name='properties',
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
     )
     beam_angle = models.ForeignKey(
         'BeamAngle',
-        related_name='products',
+        related_name='properties',
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
     )
     color_index = models.ForeignKey(
         'ColorIndex',
-        related_name='products',
+        related_name='properties',
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
     )
     color_temperature = models.ForeignKey(
         'ColorTemperature',
-        related_name='products',
+        related_name='properties',
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
     )
     body_color = models.ForeignKey(
         'BodyColor',
-        related_name='products',
+        related_name='properties',
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
     )
     frame_color = models.ForeignKey(
         'FrameColor',
-        related_name='products',
+        related_name='properties',
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
     )
     cover_color = models.ForeignKey(
         'CoverColor',
-        related_name='products',
+        related_name='properties',
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
     )
     dimming = models.ForeignKey(
         'Dimming',
-        related_name='products',
+        related_name='properties',
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
     )
     protection = models.ForeignKey(
         'Protection',
-        related_name='products',
+        related_name='properties',
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
