@@ -156,6 +156,7 @@ class ModelRetrieveSerializer(serializers.ModelSerializer):
         fields = [
             'id',
             'title',
+            'description',
             'slug',
             'min_price',
             'min_discounted_price',
