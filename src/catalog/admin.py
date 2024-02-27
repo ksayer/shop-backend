@@ -1,21 +1,24 @@
 from django.contrib import admin
+
 from catalog.models import (
+    Banner,
+    Beam,
+    BeamAngle,
+    BodyColor,
     Category,
+    ColorIndex,
+    ColorTemperature,
+    CoverColor,
+    Dimming,
+    FrameColor,
+    Gallery,
     Group,
     Model,
     Modification,
+    Power,
     Product,
     ProductFile,
     Property,
-    Power,
-    Beam,
-    ColorIndex,
-    ColorTemperature,
-    BodyColor,
-    FrameColor,
-    CoverColor,
-    Dimming,
-    BeamAngle,
     Protection,
     Size,
 )
@@ -24,6 +27,16 @@ from catalog.models import (
 class ProductFileInline(admin.TabularInline):
     extra = 1
     model = ProductFile
+
+
+class BannerInline(admin.TabularInline):
+    model = Banner
+    extra = 1
+
+
+class GalleryInline(admin.TabularInline):
+    model = Gallery
+    extra = 1
 
 
 @admin.register(Group)
@@ -46,6 +59,7 @@ class ModelAdmin(admin.ModelAdmin):
     autocomplete_fields = ['category']
     list_display = ['title', 'active', 'slug', 'ordering']
     list_editable = ['ordering', 'active']
+    inlines = [BannerInline, GalleryInline]
     search_fields = ['title']
 
 
@@ -70,15 +84,22 @@ class PropertyInline(admin.StackedInline):
     ]
     model = Property
     fieldsets = [
-        ('', {
-            'fields': [
-                ('body_color', 'color_temperature',),
-                ('power', 'beam'),
-                ('beam_angle', 'color_index'),
-                ('frame_color', 'cover_color'), ('dimming', 'protection'),
-                ('size',),
-            ],
-        }),
+        (
+            '',
+            {
+                'fields': [
+                    (
+                        'body_color',
+                        'color_temperature',
+                    ),
+                    ('power', 'beam'),
+                    ('beam_angle', 'color_index'),
+                    ('frame_color', 'cover_color'),
+                    ('dimming', 'protection'),
+                    ('size',),
+                ],
+            },
+        ),
     ]
     can_delete = False
     template = 'admintools/stacked_inline_o2o.html'
