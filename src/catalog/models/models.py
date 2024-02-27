@@ -3,7 +3,7 @@ from filer.fields.file import FilerFileField
 from filer.fields.image import FilerImageField
 
 from admintools.models import ActiveCoreModel, CoreModel
-from catalog.models.managers import GroupQuerySet, ModelQuerySet, CategoryQuerySet
+from catalog.models.managers import CategoryQuerySet, GroupQuerySet, ModelQuerySet
 
 
 class Group(ActiveCoreModel):
@@ -37,6 +37,24 @@ class Model(ActiveCoreModel):
         return self.title
 
 
+class Banner(CoreModel):
+    title = models.CharField(max_length=256)
+    description = models.TextField()
+    image = FilerImageField(on_delete=models.CASCADE, related_name='model_banners')
+    model = models.ForeignKey(Model, related_name='banners', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
+
+
+class Gallery(CoreModel):
+    image = FilerImageField(on_delete=models.CASCADE, related_name='gallery')
+    model = models.ForeignKey(Model, related_name='gallery', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.image.name
+
+
 class Modification(CoreModel):
     title = models.CharField(max_length=64)
     slug = models.SlugField(max_length=64)
@@ -53,9 +71,7 @@ class Product(ActiveCoreModel):
     title = models.CharField('Product title (without model)', max_length=64, blank=True)
     slug = models.SlugField()
     modification = models.ForeignKey(
-        'Modification',
-        related_name='products',
-        on_delete=models.CASCADE
+        'Modification', related_name='products', on_delete=models.CASCADE
     )
     price = models.DecimalField(max_digits=10, decimal_places=0)
     discounted_price = models.DecimalField(
@@ -75,7 +91,7 @@ class Product(ActiveCoreModel):
         on_delete=models.CASCADE,
         related_name='products',
     )
-    scheme = FilerFileField(
+    scheme = FilerImageField(
         blank=True,
         null=True,
         on_delete=models.SET_NULL,

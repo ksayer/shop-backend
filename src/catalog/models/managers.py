@@ -16,12 +16,9 @@ def get_filter_aggregations(prefix: str = '') -> dict[str, JSONObject]:
         property_title = f"{prefix}models__modifications__products__property__{prop}__title"
 
         aggregations[prop] = JSONBAgg(
-            JSONObject(
-                id=property_id,
-                group_title=property_group
-            ),
+            JSONObject(id=property_id, group_title=property_group),
             distinct=True,
-            filter=~Q(**{property_title: None})
+            filter=~Q(**{property_title: None}),
         )
     return aggregations
 
@@ -42,23 +39,21 @@ class CategoryQuerySet(QuerySet):
 
 class ModelQuerySet(QuerySet):
     def for_catalog(self):
-        return self.annotate(
-            min_price=Min('modifications__products__price'),
-            min_discounted_price=Min('modifications__products__discounted_price'),
+        return self.annotate_prices().annotate(
             _color_temperatures=JSONBAgg(
                 'modifications__products__property__color_temperature__title',
                 distinct=True,
             ),
             color_temperatures=Case(
-                When(_color_temperatures=[None], then=Value([])),
-                default='_color_temperatures'
+                When(_color_temperatures=[None], then=Value([])), default='_color_temperatures'
             ),
             images=JSONBAgg(
                 JSONObject(
                     id=F('modifications__products__id'),
                     ordering=F('modifications__products__ordering'),
                     file=Concat(
-                        Value(f'{settings.HOST_DOMAIN}/media/'), F('modifications__products__image__file')
+                        Value(f'{settings.HOST_DOMAIN}/media/'),
+                        F('modifications__products__image__file'),
                     ),
                     width=F('modifications__products__image___width'),
                     height=F('modifications__products__image___height'),
@@ -66,4 +61,10 @@ class ModelQuerySet(QuerySet):
                 ),
                 ordering='modifications__products__ordering',
             ),
+        )
+
+    def annotate_prices(self):
+        return self.annotate(
+            min_price=Min('modifications__products__price'),
+            min_discounted_price=Min('modifications__products__discounted_price'),
         )

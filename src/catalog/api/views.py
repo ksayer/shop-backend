@@ -1,8 +1,20 @@
 from django.db.models import Prefetch
 from rest_framework import generics
 
-from catalog.api.serializers import GroupListSerializer, ModelListSerializer
-from catalog.models import Group, Model, Category
+from catalog.api.serializers import (
+    GroupListSerializer,
+    ModelListSerializer,
+    ModelRetrieveSerializer,
+)
+from catalog.models import (
+    Banner,
+    Category,
+    Gallery,
+    Group,
+    Model,
+    Modification,
+    Product,
+)
 
 
 class ModelListApiView(generics.ListAPIView):
@@ -26,9 +38,43 @@ class ModelListApiView(generics.ListAPIView):
     }
 
 
+class ModelRetrieveApiView(generics.RetrieveAPIView):
+    queryset = Model.objects.annotate_prices().prefetch_related(
+        Prefetch('banners', Banner.objects.select_related('image')),
+        Prefetch('gallery', Gallery.objects.select_related('image')),
+        Prefetch(
+            'modifications',
+            Modification.objects.prefetch_related(
+                Prefetch(
+                    'products',
+                    Product.objects.select_related(
+                        'scheme',
+                        'image',
+                        'property__power',
+                        'property__beam',
+                        'property__color_index',
+                        'property__color_temperature',
+                        'property__body_color',
+                        'property__frame_color',
+                        'property__cover_color',
+                        'property__dimming',
+                        'property__beam_angle',
+                        'property__protection',
+                        'property__size',
+                    ),
+                )
+            ),
+        ),
+    )
+    serializer_class = ModelRetrieveSerializer
+    lookup_field = 'slug'
+
+
 class GroupListAPIView(generics.ListAPIView):
-    queryset = Group.objects.annotate_filters().prefetch_related(
-        Prefetch('categories', Category.objects.annotate_filters())
-    ).order_by('ordering')
+    queryset = (
+        Group.objects.annotate_filters()
+        .prefetch_related(Prefetch('categories', Category.objects.annotate_filters()))
+        .order_by('ordering')
+    )
     serializer_class = GroupListSerializer
     filterset_fields = {"active": ['exact'], "slug": ['in']}
