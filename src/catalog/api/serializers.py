@@ -144,12 +144,27 @@ class ModificationSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'slug', 'products']
 
 
+class GroupLimitedSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ['id', 'slug', 'title']
+
+
+class CategoryLimitedSerializer(serializers.ModelSerializer):
+    group = GroupLimitedSerializer()
+
+    class Meta:
+        model = Category
+        fields = ['id', 'slug', 'title', 'group']
+
+
 class ModelRetrieveSerializer(serializers.ModelSerializer):
     min_price = serializers.DecimalField(max_digits=10, decimal_places=0)
     min_discounted_price = serializers.DecimalField(max_digits=10, decimal_places=0)
     banners = BannerSerializer(many=True)
     gallery = GallerySerializer(many=True)
     modifications = ModificationSerializer(many=True)
+    category = CategoryLimitedSerializer()
 
     class Meta:
         model = Model
@@ -160,6 +175,7 @@ class ModelRetrieveSerializer(serializers.ModelSerializer):
             'slug',
             'min_price',
             'min_discounted_price',
+            'category',
             'banners',
             'gallery',
             'modifications',

@@ -21,7 +21,7 @@ class ContentBlockListAPIView(generics.ListAPIView):
                 'buttons', Prefetch('tabs', Tab.objects.select_related('image'))
             ),
         ),
-        Prefetch('modelcards', ModelCard.objects.select_related('model__image')),
+        # Prefetch('modelcards', ModelCard.objects.select_related('model__image')),
         Prefetch(
             'feedbackcards',
             FeedbackCard.objects.select_related('feedback__avatar', 'feedback__project'),
@@ -40,4 +40,4 @@ class ContentBlockListAPIView(generics.ListAPIView):
     )
 
     serializer_class = ContentBlockSerializer
-    filterset_fields = ['page__slug']
+    filterset_fields = ['page__slug', 'inner_title']

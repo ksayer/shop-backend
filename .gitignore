@@ -144,3 +144,4 @@ pyrightconfig.json
 .venv/
 .vscode/
 _scripts/
+backup_media/

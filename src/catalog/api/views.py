@@ -18,7 +18,7 @@ from catalog.models import (
 
 
 class ModelListApiView(generics.ListAPIView):
-    queryset = Model.objects.for_catalog()
+    queryset = Model.objects.for_catalog().order_by('ordering')
     serializer_class = ModelListSerializer
     filterset_fields = {
         'category__slug': ['in'],
@@ -39,32 +39,36 @@ class ModelListApiView(generics.ListAPIView):
 
 
 class ModelRetrieveApiView(generics.RetrieveAPIView):
-    queryset = Model.objects.annotate_prices().prefetch_related(
-        Prefetch('banners', Banner.objects.select_related('image')),
-        Prefetch('gallery', Gallery.objects.select_related('image')),
-        Prefetch(
-            'modifications',
-            Modification.objects.prefetch_related(
-                Prefetch(
-                    'products',
-                    Product.objects.select_related(
-                        'scheme',
-                        'image',
-                        'property__power',
-                        'property__beam',
-                        'property__color_index',
-                        'property__color_temperature',
-                        'property__body_color',
-                        'property__frame_color',
-                        'property__cover_color',
-                        'property__dimming',
-                        'property__beam_angle',
-                        'property__protection',
-                        'property__size',
-                    ),
-                )
+    queryset = (
+        Model.objects.annotate_prices()
+        .select_related('category__group')
+        .prefetch_related(
+            Prefetch('banners', Banner.objects.select_related('image')),
+            Prefetch('gallery', Gallery.objects.select_related('image')),
+            Prefetch(
+                'modifications',
+                Modification.objects.prefetch_related(
+                    Prefetch(
+                        'products',
+                        Product.objects.select_related(
+                            'scheme',
+                            'image',
+                            'property__power',
+                            'property__beam',
+                            'property__color_index',
+                            'property__color_temperature',
+                            'property__body_color',
+                            'property__frame_color',
+                            'property__cover_color',
+                            'property__dimming',
+                            'property__beam_angle',
+                            'property__protection',
+                            'property__size',
+                        ),
+                    )
+                ),
             ),
-        ),
+        )
     )
     serializer_class = ModelRetrieveSerializer
     lookup_field = 'slug'
